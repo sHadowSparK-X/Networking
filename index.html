@@ -1,0 +1,875 @@
+<!DOCTYPE html> <html><head>
+		<title>Networking</title>
+		<base href="./">
+		<meta id="root-path" root-path="./">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="sHadowSpark - index">
+		<meta property="og:title" content="index">
+		<meta property="og:description" content="sHadowSparK - index">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="index.html">
+		<meta property="og:image" content="various-layers-of-the-osi-model-1.webp">
+		<meta property="og:site_name" content="sHadowSparK">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript></head><body class="publish css-settings-manager theme-light show-inline-title show-ribbon show-urls show-close-buttons show-file-explorer-navigation no-lp-heading-level-indicator"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="OSI / TCP/IP">OSI / TCP/IP</h1><div class="heading-wrapper"><div class="heading-children"><div><ol>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>A <strong>computer network</strong> is a set of devices (computers) connected to exchange information and resources such as files etc. The main goals of computer networks are:</p>
+<ul>
+<li data-line="2"><em>Resource sharing</em> (such as software sharing, program sharing, etc.)</li>
+<li data-line="3"><em>High Reliability</em> (if one network link fails another can transfer the data).</li>
+<li data-line="4"><em>Cost Reduction</em> (we can buy only required services from cloud services like  GCloud, AWS, Azure, etc.).</li>
+<li data-line="5"><em>Communication</em> (acts as a communication medium between sender and receiver).</li>
+<li data-line="6"><em>Load Sharing</em> (a program may run on multiple machines).</li>
+</ul>
+</li>
+<li data-line="8">
+<p>The <em>Internet</em> operates on a technique called <strong>packet switching</strong>. In packet    switching, the data that is transferred among the different computers on the internet are transmitted in the form of packets. These packets contain information about the <em>error control</em> mechanisms, the <em>address</em> of the destination, and also the <em>sequence</em> in which the packets are to be transmitted.</p>
+</li>
+<li data-line="10">
+<p>The web has got upgraded from <strong>WEB 1.0</strong> (on which, there is only single- side communication between two computers) to <strong>WEB 2.0</strong> (which allows two-way communication between two computers). <strong>WEB 3.0</strong> majorly focuses on the <em>data</em> of the users. It lays emphasis on <em>decentralized</em> applications based on <em>blockchain</em> technology aided with the power of <em>AI</em> and <em>Machine Learning</em>.</p>
+</li>
+<li data-line="12">
+<p>In <strong>circuit switching</strong>, a dedicated communication channel is set up between the sender and the receiver. Due to the <em>dedicated circuit</em>, there is extremely little chance of data loss or error but a lot of <em>bandwidth</em> is lost because other senders cannot utilize the same channel when a transmission is going on.</p>
+</li>
+<li data-line="14">
+<p>In <strong>message switching</strong>, end-users communicate by sending and receiving <em>messages</em> that included the entire data to be shared. Messages are the smallest individual unit. There are a number of intermediate nodes that transfer data and ensure that the message reaches its destination. Message switched data networks are hence called <em>hop-by-hop</em> systems.</p>
+</li>
+<li data-line="16">
+<p>In <strong>packet switching</strong>, the message is first divided into <em>data packets</em> and then transmitted. It is <em>connectionless</em>, as it doesn't require a dedicated communication channel. These data packets are then grouped at the receiver's end to obtain the actual data or message. It is not preferred for transmissions with <em>constant usage</em>, such as voice calls.</p>
+</li>
+<li data-line="18">
+<p>The <strong>OSI</strong> model is a 7-layered model,and the basic idea behind layered architecture is to divide the design into <em>smaller pieces</em>. Most networks are organized in a series of layers to reduce the <em>design complexity</em>. The layered architecture also provides <em>abstraction</em> from other layers.</p>
+</li>
+<li data-line="20">
+<p>The <em>lower layer</em> is responsible for all the <em>data transfer issues</em> and is also known as the <strong>Hardware Layer</strong>. It consists of <em>Physical Layer</em>, <em>Data Link Layer</em> and <em>Network Layer</em>.</p>
+</li>
+<li data-line="22">
+<p>The <em>upper layer</em> is responsible for all the <em>application-related issues</em> and is also known as <strong>Software Layer</strong>. It includes <em>Application Layer</em>, <em>Presentation Layer</em>, <em>Session Layer</em>, <em>Transport Layer</em>.</p>
+</li>
+<li data-line="24">
+<p>There are <em>7</em> layers in a OSI model:<br>
+<span alt="various-layers-of-the-osi-model 1.webp" src="various-layers-of-the-osi-model 1.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="various-layers-of-the-osi-model 1.webp" src="various-layers-of-the-osi-model-1.webp"></span><br>
+<strong>(7)</strong> <mark>Application Layer</mark><br>
+It defines protocols which enable applications to communicate with other applications over the Internet. For eg: <em>HTTP/S</em>, <em>SMTP</em>, <em>RDP</em> are application layer protocols.<br>
+<strong>(6)</strong> <mark>Presentation Layer</mark><br>
+It performs three main tasks. <em>Translation</em> which converts ASCII/Unicode to binary form, <em>Data Compression</em> which is used to compress data for faster transmission and <em>Encryption</em> to secure data from unauthorized access.<br>
+<strong>(5)</strong> <mark>Session Layer</mark><br>
+It is mainly responsible for <em>Authentication</em> and <em>Authorization</em>. It is used for establishing, managing and terminating sessions. For eg: When we log into our account on a website, perform a task and then logout. All of this is managed by the <em>session layer</em>.<br>
+<strong>(4)</strong> <mark>Transport Layer</mark><br>
+It performs three main tasks. <em>Segmentation</em> which breaks data into smaller segments depending on the protocol used. <em>Flow Control</em> which is responsible for managing the speed of flow of data between devices. <em>Error Control</em> which is used for check for errors in data through checksum bits and send automatic repeat requests for missing or corrupted data. <em>TCP</em>, <em>UDP</em> protocols.<br>
+<strong>(3)</strong> <mark>Network Layer</mark><br>
+It performs the following tasks: It generates <em>Packets</em> which contain the <em>segments</em> plus additional information like source, destination <em>IP</em>, <em>Ports</em> etc.<br>
+<em>Logical Addressing</em> to provide IP addresses to devices on the network. It also generates a <em>Routing Mask</em> to mask devices on a <em>subnet</em>. Lastly it used for <em>Path Determination</em> to identify optimal path to reach the destination.<br>
+<strong>(2)</strong> <mark>Data Link Layer</mark><br>
+As the name suggests it links the digital data to the physical hardware. It is used for <em>Media Access Control</em> to ensure collision free transmission of data. It generates a <em>Frame</em> which is the form of <em>stream of bits</em> combined with the <em>MAC Address</em> of source and destination <em>NIC</em> along with <em>error-detection</em>.<br>
+<strong>(1)</strong> <mark>Physical Layer</mark><br>
+This layer is for transmission of data from one device to another in a computer network. The bitstream is encoded into <em>signals</em> before it can be transmitted. These signals can be either <em>Analog Signals</em> or <em>Digital Signals</em>.<br>
+For Eg: Copper Cables use <em>electrical signals</em> whereas Fiber uses <em>laser signals</em></p>
+</li>
+<li data-line="43">
+<p>Types of networks based on their scale:<br>
+<strong>(i)</strong> <mark>PAN</mark>: Personal Area Network<br>
+<strong>(ii)</strong> <mark>LAN</mark>: Local Area Network<br>
+<strong>(iii)</strong> <mark>WLAN</mark>: Wireless Local Area Network<br>
+<strong>(iv)</strong> <mark>CAN</mark>: Campus Area Network<br>
+<strong>(v)</strong> <mark>MAN</mark>: Metropolitan Area Network<br>
+<strong>(vi)</strong> <mark>WAN</mark>: Wide Area Network<br>
+<strong>(vii)</strong> <mark>SAN</mark>: Storage Area Network</p>
+</li>
+<li data-line="52">
+<p>While the <em>OSI</em> model is a reference/logical model, the <strong>TCP/IP</strong> is a simpler and practical version of the OSI model, which is used to design networks in real environments. Unlike OSI model it consists of only four layer:<br>
+<strong>(4)</strong> <mark>Application Layer</mark><br>
+<strong>(3)</strong> <mark>Transport Layer</mark><br>
+<strong>(2)</strong> <mark>Network Layer</mark><br>
+<strong>(1)</strong> <mark>Physical Layer</mark></p>
+</li>
+<li data-line="58">
+<p>In networking, the <strong>protocol</strong> is a set of rules for transmitting data. In networking, the protocol is also referred to as a rule for <em>processing</em> and <em>transmitting</em> data. Computers connected within the network may use different types of software and hardware, but protocols allow them to communicate with each other instead of different software and hardware.<br>
+<span alt="image-for-the-protocol.webp" src="image-for-the-protocol.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="image-for-the-protocol.webp" src="image-for-the-protocol.webp"></span><br>
+</p>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h1 class="heading" id="Application_Layer">Application Layer</h1><div class="heading-children"><div><ol>
+<li data-line="0">
+<p><mark>Application Layer</mark></p>
+<p> An <strong>application layer</strong> is an <em>abstraction layer</em> that specifies the shared communications protocols and interface methods used by <em>hosts</em> in a communications network. It is the layer closest to the <em>end-user</em>, implying that the application layer and the <em>end-user</em> can interact directly with the <em>software application</em>. The application layer isn't an <em>application</em>. Instead, it's a <em>component</em> within an application that manages how data is sent to and received from other devices.</p>
+<p> <em>Domain Name System</em> (DNS), <em>Simple Mail Transfer Protocol</em> (SMTP), <em>File Transfer Protocol</em> (FTP), <em>Trivial File Transfer Protocol</em> (TFTP), and <em>TELNET</em> are some of the protocols used in the application layer.</p>
+<p> <strong>(i)</strong> The application layer guarantees that the receiver is <em>recognized</em>, <em>accessible</em>, and <em>ready to receive data</em> from the sender.<br>
+<strong>(ii)</strong> It enables <em>authentication</em> for an added layer of network security.<br>
+<strong>(iii)</strong> It determines the <em>protocol</em> and <em>data syntax</em> rules at the application level.<br>
+<strong>(iv)</strong> The protocols of the application layer also define the <em>basic syntax</em> of the message being <em>forwarded</em> or <em>retrieved</em>.<br>
+<strong>(v)</strong> It also checks whether the sender's computer has the necessary <em>communication interfaces</em>, such as an <em>Ethernet</em> or <em>Wi-Fi</em> interface.<br>
+<strong>(vi)</strong> Finally, the data on the receiving end is presented to the <em>user application</em>.</p>
+</li>
+<li data-line="13">
+<p>There are mainly two types of computer network architecture:</p>
+<p> <strong>(i)</strong> <mark>Peer-to-Peer (P2P)</mark><br>
+<em>Peer-to-peer</em> has <em>decentralized</em> the simplest form of network architecture where every computer system (node) can communicate with every other computer system (node). In the peer-to-peer network architecture, there is no use of a <em>centralized server</em>. Also, each node of the network has equal <em>permission</em> and <em>responsibility</em> for processing the data or information. So, we can say that in a peer-to-peer network, each computer system can act as both a <em>server</em> and as well as a <em>client</em>.<br>
+<span alt="what-is-a-client.webp" src="what-is-a-client.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="what-is-a-client.webp" src="what-is-a-client.webp"></span><strong>(ii)</strong> <mark>Client-Server</mark><br>
+A <strong>client</strong> is a computer system that accesses the services provided by a server. On the other hand, a <strong>server</strong> is a powerful centralized hub that stores various information and handles the requests of the client(s). In the <em>client-server</em> network, the files are not stored on the hard drive of each computer system. Instead, the files are <em>centrally stored</em> and backed up on a specialized computer known as a <em>server</em>. Here, a server is designed to efficiently provide data to a remote client. On a large-scale network, there can be more than one server.<br>
+<span alt="what-is-a-client-server-network.webp" src="what-is-a-client-server-network.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="what-is-a-client-server-network.webp" src="what-is-a-client-server-network.webp"></span></p>
+</li>
+<li data-line="20">
+<p>The <strong>Domain Name System</strong> (DNS) is a method for mapping <em>alphabetic</em> names to <em>numeric</em> IP addresses on the Internet, similar to how a phone book maps a person's name to a phone number. A DNS query is made when a web <em>address (URL)</em> is typed into a browser to obtain the IP address of a web server associated with that name. The DNS directory is distributed worldwide to account for the millions of domain names listed and accessed daily.</p>
+<p>  The resolution process of the DNS can either be <strong>iterative</strong> or <strong>*recursive</strong>:</p>
+<p>  <strong>(i)</strong> <mark>Recursive DNS Service</mark>: In this type, if the DNS resolver only communicates to the root servers and the remaining servers were communicated <strong>recursively</strong> by the root server. The root server sends the output (IP in this case) to the DNS resolver.<br>
+<span alt="recursive-dns-service.webp" src="recursive-dns-service.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="recursive-dns-service.webp" src="recursive-dns-service.webp"></span><br>
+<strong>(ii)</strong> <mark>Iterative DNS Service</mark>: In this type, the <strong>DNS resolver</strong> can directly communicate and receive input from the servers at different levels.<br>
+<span alt="iterative-dns-service.webp" src="iterative-dns-service.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="iterative-dns-service.webp" src="iterative-dns-service.webp"></span></p>
+</li>
+<li data-line="28">
+<p>The <strong>DNS</strong> consists of different types of servers:<br>
+<strong>(i)</strong> <mark>DNS Resolver</mark>: An application, such as a web browser, sends DNS queries to the recursive server. It's the user's <em>first resource</em>, and it either provides the response to the query if it has it cached, or it goes to the next-level server if it doesn't. Before answering the client, this server may undergo multiple iterations of querying.<br>
+<strong>(ii)</strong> <mark>Root Name Server</mark>: If the recursive server does not have the answer cached, it first sends a query to this server. The root name server is a directory of all the servers that will hold the requested information.<br>
+<strong>(iii)</strong> <mark>Top-Level Domain Server</mark>: A <em>TLD nameserver</em> keeps track of all domain names with the same domain extension, such as .com, .net, or whatever comes after the last dot in a URL.<br>
+<strong>(iv)</strong> <mark>Authoritative name server</mark>: The server contains information specific to the domain name it serves <strong>(e.g., scaler.com)</strong>. If the authoritative name server has access to the requested record, it will return the requested hostname's IP address to the <em>DNS Recursor</em> (the librarian) who initiated the request.</p>
+</li>
+<li data-line="34">
+<p>Three different types of <strong>DNS Queries</strong>:<br>
+<strong>(i)</strong> <mark>Recursive Query</mark>: A DNS client expects a DNS server <strong>(usually a DNS resolver)</strong> to respond to a recursive query with either the requested resource record or an error message if the resolver is unable to locate it.<br>
+<strong>(i)</strong> <mark>Iterative Query</mark>: It occurs between the DNS resolver and the nonlocal name servers, like the root, TLD, and authoritative name servers. The root server refers to the recursive server to the TLD, which directs it to an authoritative server. If the authoritative server has the domain name, it passes it on to the <strong>recursive server</strong>.<br>
+<strong>(i)</strong> <mark>Non-Recursive Query</mark>: This usually happens when a DNS resolver client requests a record from a DNS server that it has access to, either because it is authorized for the record or because the record is in its cache.</p>
+</li>
+<li data-line="39">
+<p><strong>A Record</strong> stands for address and holds the IP address of a domain. <strong>Ns record</strong> stands for name server records that specify which authoritative server is responsible for maintaining all information for a specific domain.<strong>TXT records</strong> enable administrators to enter text into DNS. When there is an alias, <strong>canonical name records</strong> are utilized instead of an <em>A record</em>.</p>
+</li>
+<li data-line="41">
+<p><strong>DNS caching</strong> aims to shorten the time it takes to receive a response to a DNS query. Caching allows DNS to save past answers to requests closer to clients, allowing them to obtain the same information faster the next time they query it. Caching improves efficiency by allowing servers to react quickly when receiving a request for the same <strong>IP address</strong>.</p>
+</li>
+<li data-line="43">
+<p>The <strong>World Wide Web</strong> popularly known as <strong>WWW</strong>, <strong>W3</strong>, or the <strong>Web</strong> is an interconnected system of public webpages accessible through the Internet. The <em>Web</em> is not the same as the <em>Internet</em> : the <em>Web</em> is one of many applications built on top of the Internet.</p>
+</li>
+<li data-line="45">
+<p><strong>Protocols</strong> in the <em>Application Layer</em> help in building models for users to interact with software applications over the <em>World Wide Web</em>. It contains formatting rules specifying how data is packaged when the messages are sent and received. There are several protocols in the application layer used for different services like <em>email services</em>, <em>file transfers</em>, etc.</p>
+<p> Some commonly used <em>application layer</em> protocols are:<br>
+<strong>(i)</strong> <mark>DNS</mark>: It is used for an effective translation of internet domain names into internet protocol addresses. Port <em>53</em>.<br>
+<strong>(ii)</strong> <mark>TELNET</mark>: It is used for communication through the command line interface between remote devices or servers. Port <em>23</em>.<br>
+<strong>(iii)</strong> <mark>FTP</mark>: It models a protocol to download, upload, and transfer files between two devices over the internet. Port <em>20</em> for data and <em>21</em> for control.<br>
+<strong>(iv)</strong> <mark>TFTP</mark>: A concise version of FTP, it provides a lightweight file transfer mechanism. Port <em>69</em>.<br>
+<strong>(v)</strong> <mark>NFS</mark>: It provides a model to share files remotely between servers over a network. Port <em>2049</em>.<br>
+<strong>(vii)</strong> <mark>LPD</mark>: It is a protocol defined for print servers between UNIX systems and remote printers. Port <em>515</em>.<br>
+<strong>(viii)</strong> <mark>X Window</mark>: It is a network protocol providing <em>GUI</em> (Graphical User Interface) for networks in interconnected mainframes. Port <em>6000</em>.<br>
+<strong>(ix)</strong> <mark>SMTP</mark>: The SMTP protocol builds a communication network between two email servers. Port <em>25</em>.</p>
+</li>
+<li data-line="57">
+<p>In order to fetch the <em>webpage</em> corresponding to a given IP address, the browser sends a request (called as <strong>HTTP request</strong>) to the web server. An HTTP request consists of 3 parts i.e. a <em>request line</em>, <em>request headers</em>, and <em>request body</em>.<br>
+<span alt="http-request.webp" src="http-request.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="http-request.webp" src="http-request.webp"></span></p>
+</li>
+<li data-line="60">
+<p>After the client/browser sends an <em>HTTP request</em> to the web server, the server responds back to the browser with an <strong>HTTP response</strong>. This response consists of all the data that is requested by the client in the <em>HTTP request</em>. An <strong>HTTP response</strong> consists of 3 parts: <em>Response Status Line</em>, <em>Response Headers</em>, <em>Response Body</em>.<br>
+<span alt="what-is-http-protocol 1.webp" src="what-is-http-protocol 1.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="what-is-http-protocol 1.webp" src="what-is-http-protocol-1.webp"></span></p>
+</li>
+<li data-line="62">
+<p>An <strong>HTTP status code</strong> is a three-digit code that specifies the status of the HTTP response. Some of the commonly seen HTTP status codes are: <em>200</em>: OK, <em>404</em>: Page Not Found, <em>500</em>: Internal Server Error</p>
+</li>
+<li data-line="64">
+<p>HTTP does not store the <em>state/information</em> of the client as well as the server and hence, is a <strong>stateless protocol</strong>. But with the help of <em>cookies</em>, we can make HTTP protocol as a <strong>stateful protocol</strong>.Since HTTP relies on the <em>TCP</em> (Transmission Control Protocol), it is a <strong>connection-oriented</strong> protocol. Hence, the connection is established and the data is sent over the connection only after the establishment of the connection.</p>
+</li>
+<li data-line="66">
+<p>SMTP, which stands for, <strong>Simple Mail Transfer Protocol</strong>, is an email protocol that is used to send and receive emails over the internet. It is a set of guidelines that are followed to transmit electronic mail over the Internet. The main purpose of the SMTP is to set up communication guidelines between the servers.</p>
+<p>  Basically, in SMTP the actual transfer of the mail is done through the <strong>message transfer agent</strong> (MTA). Hence, to send the mail, the system must have the client <em>MTA</em> and similarly, to receive the mail, the system must have the server <em>MTA</em>.<br>
+<span alt="example-of-the-working-of-smtp-protocol.webp" src="example-of-the-working-of-smtp-protocol.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="example-of-the-working-of-smtp-protocol.webp" src="example-of-the-working-of-smtp-protocol.webp"></span></p>
+</li>
+<li data-line="70">
+<p>The <strong>SMTP client</strong> sends the commands to the <strong>SMTP server</strong> and the server responds with some kind of numerical codes. Some popular commands are:<br>
+<strong>(i)</strong> <mark>HELO</mark>: This command is used for beginning the email-sending process and is used to identify the user and full domain name.<br>
+<strong>(ii)</strong> <mark>MAIL</mark>: This command is used to initiate the message transfer and identifies the originator of the mail.<br>
+<strong>(iii)</strong> <mark>RCPT</mark>: This command identifies the recipient of the mail and again the SMTP server responds with the same code.<br>
+<strong>(iv)</strong> <mark>DATA</mark>: This command triggers the transfer of data between the client and the server.<br>
+<strong>(v)</strong> <mark>QUIT</mark>: After the email has been sent, the client sends this command to quit the server.<br>
+<strong>(vi)</strong> <mark>RSET</mark>: To abort or cancel the mail transaction, this command is used. This doesn't close the connection but it does reset everything.</p>
+</li>
+<li data-line="78">
+<p>The <strong>FTP protocol</strong> helps to transfer files from one computer to another by providing access to <em>directories</em> or <em>folders</em> on remote computers and allows software, data, text file to be transferred between different kinds of computers. </p>
+<p>   Although transferring files from one system to another is very simple and <em>straightforward</em>, but sometimes it can cause problems. For example, two systems may have <em>different file conventions</em>. Two systems may have different ways to represent text and data. Two systems may have <em>different directory</em> structures. FTP protocol <em>overcomes</em> these problems by establishing <em>two</em> connections between hosts. One connection is used for <em>data transfer</em>, and another connection is used for the <em>control connection</em>.</p>
+<p>   During an FTP transmission, the computers, servers, or proxy servers communicate using four commands. These are <em>send</em>, <em>get</em>, <em>change directory</em>, and <em>transfer</em>. FTP transfers files in three separate modes: <strong>block</strong>, <strong>stream</strong>, and <strong>compressed</strong>. The <em>stream mode</em> allows FTP to manage information in a string of data without any boundaries between them. The <em>block mode</em> divides the data into blocks, and in the <em>compressed mode</em>, FTP uses an algorithm called the <em>Lempel-Ziv</em> to compress the data.</p>
+</li>
+<li data-line="84">
+<p>File transfers can be performed in a variety of ways by an <em>FTP server</em>:<br>
+<strong>(i)</strong> <mark>Anonymous FTP</mark>: <em>Anonymous File Transfer Protocol</em> (FTP) allows remote users to connect to an FTP server without a user ID and password. It is mostly used for downloading freely distributable material.<br>
+<strong>(ii)</strong> <mark>Password Protected FTP</mark>: It is also a fundamental type of&nbsp;FTP but demands a password and username, although the service may not be encrypted or secure.<br>
+<strong>(iii)</strong> <mark>FTP Secure (FTPS)</mark>: <em>FTPS</em> (File Transfer Protocol Secure) is a File Transfer Protocol modification that supports Transport Layer Security (TLS) and the now-defunct Secure Sockets Layer (SSL).<br>
+<strong>(iv)</strong> <mark>FTP over Explicit SSL/TLS (FTPES)</mark>: <em>FTPES</em> is similar to FTPS, as&nbsp;it explicitly connects to your web hosting account instead of FTP's implicit connection. The difference is primarily in how and when the login information is encrypted.<br>
+<strong>(v)</strong> <mark>Secure FTP (SFTP)</mark>: The <em>Secure File Transfer Protocol</em> (SFTP) is a file protocol that transfers large files over the internet. It is based on the File Transfer Protocol (FTP) and contains Secure Shell (SSH) security features.</p>
+</li>
+<li data-line="91">
+<p><strong>Message Queuing Telemetry Transport</strong> (MQTT)is a lightweight open messaging protocol that provides a simple mechanism for resource-constrained network clients to distribute telemetry data in low-bandwidth contexts. The protocol is used for <em>M2M</em>(machine-to-machine) communication and employs a <em>publish/subscribe</em> communication structure. It is a straightforward messaging protocol built for <em>low-bandwidth</em> devices, making it the ideal choice for <em>Internet of Things</em> applications.</p>
+<p>   <em>MQTT</em> was created to work in an embedded environment and provide a dependable, efficient communication method. MQTT is a <strong>low-overhead protocol</strong> developed to work around bandwidth and CPU restrictions. <em>MQTT</em> is a viable option for wireless networks that may encounter latency issues because of bandwidth restrictions or shaky connections.<br>
+<span alt="mqtt-protocal-overview.webp" src="mqtt-protocal-overview.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="mqtt-protocal-overview.webp" src="mqtt-protocal-overview.webp"></span></p>
+</li>
+<li data-line="95">
+<p>A few characteristics of <em>MQTT Protocol</em>:<br>
+<strong>(i)</strong> <mark>Authentication</mark>: MQTT <em>authenticates</em> every user who wishes to publish or subscribe to specific data.<br>
+<strong>(ii)</strong> <mark>Access Control</mark>: MQTT <em>controls</em> which users have access to particular topics using data stored in a MongoDB table <em>'mqtt acl'</em><br>
+<strong>(iii)</strong> <mark>QoS</mark>: The <strong>Quality of Service</strong> (QoS) level is the message transfer quality that ensures message delivery between the sending and receiving bodies.<br>
+<strong>(iv)</strong> <mark>Last Will Message</mark>: MQTT employs the <strong>Last Will &amp; Testament</strong> (LWT) method to alert other clients of an ungraceful disconnection of a client.<br>
+<strong>(v)</strong> <mark>Retain Message</mark>: MQTT retains a client's last message. When a client reconnects, the broker associates it with a previously retained message.<br>
+<strong>(vi)</strong> <mark>Duplicate Message</mark>: If a publisher does not receive an <em>acknowledgment</em> for a published packet, the packet is resent with the <strong>DUP</strong> flag set to <em>true</em>.<br>
+<strong>(vii)</strong> <mark>Sessions</mark>: When a client first connects with a broker, the client must create sessions for any topics for which they wish to receive messages.</p>
+</li>
+<li data-line="104">
+<p>The <em>MQTT</em> packet architecture is described below:<br>
+<span alt="mqtt-protocal-structure.webp" src="mqtt-protocal-structure.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="mqtt-protocal-structure.webp" src="mqtt-protocal-structure.webp"></span><br>
+The MQTT message format consists of a two-byte fixed header that appears in all <strong>MQTT packets</strong>. The <strong>second field</strong> is a changeable header that may or may not be present. The <strong>third field</strong>, which is not mandatory, is a payload. The payload field holds the data that is being transferred.</p>
+</li>
+<li data-line="108">
+<p>In the <em>client/server</em> architecture of MQTT, each <em>sensor</em> acts as a client and establishes a TCP connection with a server, called a <em>broker</em>. MQTT protocol is a <em>message-oriented</em> protocol. Every message is a separate chunk of data the broker cannot see. Every communication is sent to an address known as a <strong>topic</strong>. Clients can subscribe to several <em>topics</em>. Every message published on a topic is delivered to every client who has subscribed to that topic.</p>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h1 data-heading="Transport Layer" class="heading" id="Transport_Layer">Transport Layer</h1><div class="heading-children"><div><ol>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><mark>Transport Layer</mark><br>
+The <em>transport layer</em> in computer networks is a crucial component of the networking stack responsible for ensuring reliable and efficient communication between two devices over a network. </p>
+<p>  In simple words the <em>transport layer</em> is basically responsible for <em>process to process</em> delivery of data and for maintaining order so that the data must be received in the <em>same sequence</em> as it was sent by the sender.</p>
+<ul>
+<li data-line="5">
+<p><strong>On the sender's side</strong>: The transport layer takes data (messages) from the Application layer and proceeds to segment it. It breaks down the original message into smaller segments, incorporates the source and destination <em>port numbers</em> into the segment's header, and dispatches the segmented data to the Network layer.</p>
+</li>
+<li data-line="7">
+<p><strong>On the receiver's side</strong>: The transport layer receives data from the Network layer, <em>reconstructs</em> the segmented information, inspects the header to determine the port number, and then routes the message to the proper port within the Application layer.</p>
+</li>
+</ul>
+</li>
+<li data-line="9">
+<p>Various services provided by the <em>Transport Layer</em> are as follows:<br>
+<strong>(i)</strong> <mark>Process to Process Communication</mark>: Transport Layer uses a port number to deliver the segmented data to the correct process amongst the multiple processes that are running on a particular host.<br>
+<strong>(ii)</strong> <mark>Multiplexing</mark>: The transport layer provides the multiplexing service to improve transmission efficiency in data communication. At the receiver side, demultiplexing is required to collect the data coming from different processes.<br>
+<strong>(iii)</strong> <mark>Data Integrity</mark>: The transport layer provides data integrity by detecting and discarding corrupted packets and by tracking such packets and re-transmitting them.<br>
+<strong>(iv)</strong> <mark>Flow Control</mark>: Flow control makes sure that the data is transmitted at a rate that is acceptable for both sender and receiver by managing data flow.<br>
+<strong>(v)</strong> <mark>Congestion Avoidance</mark>: Congestion Control refers to the mechanisms and techniques to control the congestion and keep the load below the capacity.</p>
+</li>
+<li data-line="16">
+<p>In a computer network, a <strong>Port</strong> is a <em>logical address</em> that is assigned to each application on the computer that utilizes the internet for communication. Port is an address of a <em>16-bit</em> unsigned integer number that ranges from <em>0</em> to <em>65535</em>. The primary application of a port number is to transmit the data between a Computer Network and an Application. </p>
+<p> <em>Ports</em> allow computers to easily differentiate between different kinds of traffic: emails go to a different port number than webpages, for example, even though both reach a computer over the same Internet connection.<br>
+<mark>Port number 0 to 1023</mark>: <em>Well Known or Reserved Ports</em><br>
+<mark>Port number 1024 to 49151</mark>: <em>Registered Ports</em><br>
+<mark>Port number 49151 to 65535</mark>: <em>Dynamic or Ephemeral ports</em></p>
+<p> <strong>A socket</strong> represents a single connection between two network applications. It is a combination of <em>port and IP address</em>. Socket address can be represented by <code>(tcp, hostname ,port)</code>. Applications can create <em>multiple</em> sockets for communicating with each other. For Eg: A webserver is hosted on <em>port 80</em>. Multiple clients try to connect to the webserver on <em>port 80</em> and each client is assigned a different <em>socket</em>. This way the webserver can create multiple connections using the same port address. </p>
+</li>
+<li data-line="25"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>UDP</strong> and <strong>TCP</strong> are the two most widely used <em>transport layer</em> protocols.</p>
+<p> <strong>UDP (User Datagram Protocol)</strong> is a simple and high-speed transport protocol designed for connectionless transmissions. Its reliability is lower because it lacks acknowledgments and retransmission mechanisms, potentially leading to packet loss. UDP is best suited for scenarios where speed of delivery takes precedence over reliability, such as video conferencing, where real-time data transfer is critical.</p>
+<ul>
+<li data-line="29"><em>UDP protocol</em> is a <strong>connectionless</strong> protocol, so it does not establish any virtual path before transmitting the data.</li>
+<li data-line="30"><em>UDP</em> does not guarantee the order of the datagram. A datagram can be received in any order.</li>
+<li data-line="31"><em>UDP</em> provides us a <em>faster service</em> of data transmission as there is no prior connection establishment before transmitting the data.</li>
+<li data-line="32">There is no <em>acknowledgment mechanism</em> provided by UDP as UDP protocol is a connection-less protocol, so there is <em>no handshaking</em>.</li>
+<li data-line="33">Every <em>segment</em> in UDP takes a different path to reach the destination. So, every UDP packet is handled independent of other UDP packets.</li>
+<li data-line="34"><em>UDP protocol</em> is a <strong>stateless protocol</strong> which means that the sender does not wait for an acknowledgment after sending the packet.<br>
+<span alt="format-of-user-datagram.webp" src="format-of-user-datagram.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="format-of-user-datagram.webp" src="format-of-user-datagram.webp"></span></li>
+</ul>
+<p> <strong>TCP (Transmission Control Protocol)</strong>, in contrast, is a more feature-rich transport protocol. It operates in a connection-oriented manner, employing synchronization and acknowledgment messages to guarantee data delivery. TCP is capable of retransmitting and rearranging packets as needed and can negotiate transmission rates. While TCP offers higher reliability, it tends to be slower than UDP. Nevertheless, TCP remains the most prevalent protocol on the internet due to its versatility and comprehensive functionality.</p>
+<ul>
+<li data-line="39">The <em>TCP</em> protocol is <strong>connection-oriented</strong>, hence the data is only transferred after establishing a secure connection.</li>
+<li data-line="40">The <em>TCP</em> protocol offers reliable data transfer. Using the <strong>SYN and ACK</strong> bits both the computers can keep track of the sent and lost packets.</li>
+<li data-line="41">The <em>TCP</em> protocol provides the mechanism of <em>flow control</em>. Using the flow control mechanism, the TCP can control and limit rate of data transfer.</li>
+<li data-line="42">The <em>TCP</em> protocol provides the mechanism of <em>error-checking</em> and <em>error recovery</em>.</li>
+<li data-line="43">The data packets are sent along with the <em>sequence number</em> from the sender so that it can keep track of the packets.</li>
+<li data-line="44">The <em>TCP</em> protocol also accounts for the level of congestion and sends the packets accordingly.</li>
+<li data-line="45">The <em>TCP</em> protocol creates a <em>virtual circuit</em> or <em>tube</em> in which the data is exchanged in the form of a <em>stream of bytes</em>.</li>
+<li data-line="46">The <em>TCP</em> protocol is a <em>full-duplex</em> which means the data can be transferred in both directions simultaneously (at the same time).<br>
+<span alt="tcp-segment-format 1.webp" src="tcp-segment-format 1.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="tcp-segment-format 1.webp" src="tcp-segment-format-1.webp"></span></li>
+</ul>
+</li>
+<li data-line="48">
+<p>The <strong>3-Way handshake</strong> is a <em>TCP/IP</em> network connection mechanism that connects the server and client. Before the real data communication process begins, both the client and server must exchange <em>synchronization</em> and <em>acknowledgment</em> packets. </p>
+<p> The 3-way handshake mechanism is designed to allow both communicating ends to initiate and negotiate the network TCP socket connection parameters at the same time before data is transmitted. It allows you to transfer numerous TCP socket connections in both directions simultaneously.<br>
+<span alt="working-of-tcp.webp" src="working-of-tcp.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="working-of-tcp.webp" src="working-of-tcp.webp"></span>The <em>three</em> steps involved in establishing a connection using the 3-way handshake process in TCP are as follows:<br>
+<strong>(i)</strong> The client sends the <strong>SYN</strong> (synchronize) message to the server.<br>
+<strong>(ii)</strong> The <em>server</em> responds with the <strong>SYN</strong> and the <strong>ACK</strong> (synchronize-acknowledge) message.<br>
+<strong>(iii)</strong> The client sends the <strong>ACK</strong> (acknowledge) message to the server.</p>
+</li>
+<li data-line="56">
+<p>In the <strong>Two Generals' Problem</strong>, the scenario involves two generals, each leading their army, who are situated in separate locations and must coordinate an attack on a common enemy fortress. The essence of the problem is their <em>inability</em> to communicate directly because their signals must travel through an <em>unreliable</em> channel susceptible to <em>delays</em> and <em>losses</em>. In the context of <em>computer networks</em>, the central challenge remains the presence of an unreliable communication channel and the potential for inconsistent states between the two machines.</p>
+<p> One <em>solution</em> to The Two Generals' Problem is instead of <em>one</em> messenger, General A sends <em>100</em> messengers, each with a <em>unique serial number</em>, to General B. General B gauges communication reliability by noting missing serial numbers and responds accordingly, enhancing <em>confidence</em> and <em>consensus-building</em>.</p>
+<p> Another <em>solution</em> to conserve resources is: General A sends messengers every <em>20 minutes</em> until receiving confirmation from General B. General B, after confirming, waits for more messengers, enhancing confidence as agreed.</p>
+</li>
+<li data-line="62">
+<p><strong>Congestion</strong> is an important factor in <em>packet-switched</em> networks. It refers to the state of a network where the message traffic becomes so heavy that the network response time slows down leading to the <em>failure</em> of the packet.</p>
+<p>  <strong>TCP congestion control</strong> refers to the mechanism that prevents congestion from happening or removes it after congestion takes place. When congestion takes place in the network, TCP handles it by reducing the size of the sender’s window.<br>
+<em>Congestion Window</em> is the state of TCP that limits the amount of data to be sent by the sender into the network even before receiving the acknowledgment.<br>
+<mark>Sender window size = min(Receiver window size, Congestion window size)</mark></p>
+</li>
+<li data-line="68"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>The various causes for <em>congestion</em> are:</p>
+<ul>
+<li data-line="69"><mark>Excessive consumption of bandwidth</mark></li>
+<li data-line="70"><mark>Improper subnet management</mark></li>
+<li data-line="71"><mark>Multicasting</mark></li>
+<li data-line="72"><mark>Outdated Hardware</mark></li>
+<li data-line="73"><mark>Border Gateway Protocol</mark></li>
+</ul>
+</li>
+<li data-line="75">
+<p>The various approaches for <em>congestion control</em>:<br>
+<strong>(i)</strong> <mark>Slow Start</mark>: In the <em>slow start phase</em>, the sender sets congestion window size = maximum segment size (<em>1 MSS</em>) at the initial stage. The sender increases the size of the congestion window by 1 MSS after receiving the ACK (acknowledgment). The size of the congestion window increases <em>exponentially</em> in this phase.<br>
+<span alt="slow-start-phase-congestion-control.webp" src="slow-start-phase-congestion-control.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="slow-start-phase-congestion-control.webp" src="slow-start-phase-congestion-control.webp"></span><strong>(ii)</strong> <mark>Congestion Avoidance Phase</mark>: In this phase, after the threshold is reached, the size of the congestion window is increased by the sender linearly in order to avoid congestion. Each time an acknowledgment is received, the sender increments the size of the congestion window by 1.<br>
+<span alt="congestion-avoidance-phase.webp" src="congestion-avoidance-phase.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="congestion-avoidance-phase.webp" src="congestion-avoidance-phase.webp"></span><strong>(iii)</strong> <mark>Congestion Detection Phase</mark>: In this phase, the sender identifies the segment loss and gives acknowledgment depending on the type of loss detected.<br>
+<em>Case-01</em>: Detection On Time Out<br>
+<em>Case-02</em>: Detection Of Receiving 3 Duplicate Acknowledgements<br>
+</p>
+</li>
+<li data-line="82">
+<p>The <strong>fairness metric</strong> in networking is used to determine whether the application or user is receiving a <em>fair share</em> of the system’s resources. In <em>congestion control</em>, the mechanism for transmission using the new protocol must be well aligned with the <em>TCP protocol</em>. TCP fairness determines that the new protocol receiver has a no larger share of the network as compared to TCP flow. This is an important factor because if a new protocol acquires <em>unfair capacity</em> then it leads to congestion in the network.</p>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h1 data-heading="Network Layer" class="heading" id="Network_Layer">Network Layer</h1><div class="heading-children"><div><ol>
+<li data-line="0">
+<p><mark>Network Layer</mark><br>
+<strong>Network Layer</strong> is responsible for how a machine in a network can communicate with a machine in a different network. There are two primary purposes of the network layer. The first one is to divide segments into <em>network packets</em> and then reassemble them on the receiving end. Another is to <em>route</em> packets across a physical network by determining the optimum path. The network layer uses <em>logical network addresses</em> (usually Internet Protocol addresses) to route packets to a destination node.</p>
+</li>
+<li data-line="3">
+<p>The various <em>network layer</em> protocols are:</p>
+<p> <strong>(i)</strong> <mark>Address Resolution Protocol(ARP)</mark>: It converts a <em>logical address</em>(IP address) to a <em>physical address</em>(MAC address). If a host on its network wants to know the physical address of another host on the network, it sends an <em>ARP query packet</em> with the IP address and MAC address of the source host and IP address of the destination host and broadcasts it over the network. The ARP packet is received and processed by every host on the network, but only the intended recipient recognizes its own IP address in the request address and responds with the physical address.</p>
+<p> <strong>(ii)</strong> <mark>Internet Control Message Protocol(ICMP)</mark>: It is a network <em>diagnostic</em> and <em>error reporting</em> protocol. ICMP is a protocol that is part of the IP protocol suite that employs IP as a carrier protocol because the ICMP packet is enclosed in an IP packet after it is constructed. ICMP is a best-effort non-reliable protocol, the same as IP. ICMP is one of the most essential network layer protocols.</p>
+<p> <strong>(iii)</strong> <mark>Internet Protocol Version 4(IPv4)</mark>: It is a network layer protocol that addresses and controls information and is used to transport packets in a network. To transport data packets across a network, IP and TCP work together. Each host is given a <em>32-bit</em> IP address consisting of the network and host ID. The <em>host number</em> identifies a host on the network, assigned by a network administrator, whereas the network number identifies a network and is assigned by the internet. The IP is only responsible for delivering the packets, and TCP(a transport layer protocol) helps put them back in the correct order.</p>
+<p> <strong>(iv)</strong> <mark>Internet Protocol Version 6(IPv6)</mark>: It is the latest version of the Internet Protocol. It is a network layer protocol containing addressing and control information for packet routing. IPv6 was established to address the exhaustion of IPv4. To accommodate more levels of addressing, it raises the IP address size from 32 bits to 128 bits. IPv6 has introduced Anycast addressing and removed the concept of broadcasting. Devices can self-acquire an IPv6 address and interact within that subnet using IPv6.</p>
+<p> <strong>(v)</strong> <mark>Internet Group Message Protocol (IGMP)</mark>: IGMP is a multicasting communication protocol that uses resources efficiently to broadcast message/data packets. Hosts and nearby routers use it for multicasting communication with IP networks. IGMP can be utilized in streaming media, games, or web conferencing tools since multicast communication can have multiple senders and receivers.</p>
+</li>
+<li data-line="15">
+<p>The main functions performed by the <em>network layer</em> are:<br>
+<strong>(i)</strong> <mark>Host-to-host Data Delivery</mark>: The network layer is responsible for delivering data packets from source to destination. This layer provides the service that ensures the packet will reach its intended destination.<br>
+<strong>(ii)</strong> <mark>Logical Addressing</mark>: The network layer defines an addressing scheme to uniquely identify each device on the network. The network layer places the IP addresses of the sender and receiver in the header. Such an address distinguishes each device uniquely and universally.<br>
+<strong>(iii)</strong> <mark>Routing &amp; Forwarding</mark>: Routing decides which route from source to destination is most appropriate. It chooses the shortest root between sender and receiver to forward data packets. Some widely used routing protocols are distance vector routing, link-state routing, and path vector.<br>
+<strong>(iv)</strong> <mark>Fragmentation</mark>: The network layer fragments the extensive data in fragments to forward from source to destination. It is done because each receiving node has some fixed capacity to accept data.<br>
+<strong>(v)</strong> <mark>Congestion Control</mark>: The network layer is also responsible for controlling the congestion in the network and manipulating the flow of the network.</p>
+</li>
+<li data-line="22">
+<p>Every computer or device on the internet has <em>two</em> types of addresses: its <em>physical address</em> and its <em>internet address</em>. The physical address -- which is also called a <em>media access control</em>, or <strong>MAC address</strong> -- identifies a device to other devices on the same local network. The <em>internet address</em> -- or <strong>IP address</strong> -- identifies the device globally. A network packet needs both addresses to get to its destination.</p>
+<p> In <em>layman</em> terms, IP is collectively used to refer to a <em>particular subnet</em> of devices whereas MAC is used to refer to <em>individual hosts</em> or <em>NICs</em> on that subnet. For Eg: For all the devices on your home <em>Wifi</em> any request made over the internet would be done using the <em>same IP</em> but the response will be delivered only to the specific device who made the request by identifying it using its <em>MAC address</em>.</p>
+</li>
+<li data-line="26">
+<p>The <strong>IPv4 address</strong> works on the <em>network layer</em> which is responsible for the transmission of data in the form of <em>packets</em>. It is a <em>connectionless protocol</em>. IPv4 uses a <strong>32-bit</strong> address space which provides <em>4,294,967,2964,294,967,296</em> (232232) unique addresses, but large blocks are reserved for particular networking purposes.</p>
+<p> They are either represented in <em>binary</em>, <em>dotted-decimal</em>, or <em>hexadecimal</em> notation. The most common form to represent IPv4 addresses is the <em>dotted decimal notation</em>. IPv4 can be assigned manually or by a protocol known as <strong>DHCP</strong>(Dynamic Host Configuration Protocol).</p>
+<p> The <em>IPv4</em> address is divided into <em>two</em> parts - the <em>network part</em> and the <em>host part</em>(also referred to as <em>netid</em> and <em>hostid</em>). There are 5 types of <em>classful addressing</em> namely- <strong>Class A</strong>, <strong>Class B</strong>, <strong>Class C</strong>, <strong>Class D</strong>, and <strong>Class E</strong>. They are classified based on <em>address space</em> which is divided into a fixed number of blocks and has a fixed number of hosts.<br>
+<span alt="parts-of-ipv4-address.webp" src="parts-of-ipv4-address.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="parts-of-ipv4-address.webp" src="parts-of-ipv4-address.webp"></span><br>
+<strong>Network part :</strong> The network part is also known as <em>net id</em> which is used to classify the network to which the host is connected.<br>
+<strong>Host part :</strong> The host part is also known as the <em>host id</em> which is the part of the IP address which is used to uniquely identify the host on a network.</p>
+</li>
+<li data-line="36"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><em>Addressing</em> mode refers to the mechanism of hosting an address on a given network. There are three different types of addressing modes supported by <em>IPv4</em>:</p>
+<ul>
+<li data-line="37"><mark>Unicast addressing mode</mark>: As the name suggests, the data is sent to only a <em>single host</em>. There is one source and one receiver. The relationship between the source and the destination network is <em>one-to-one</em>. The destination address field consists of a <em>32-bit IP address</em> that belongs to the destination host. It is the most common mode of addressing.</li>
+<li data-line="38"><mark>Broadcast addressing mode</mark>: In <em>broadcast addressing mode</em>, the data is sent to <em>all the devices</em> in the network, i.e., <em>multiple hosts</em>. The destination address field of the packet consists of the IP address called the <em>Special Broadcast address</em> which is represented by <em>255.255.255.255</em> The client then sends the packet which is received by all other servers on the network.</li>
+<li data-line="39"><mark>Multicast addressing mode</mark>: In <em>multicasting addressing mode</em>, there is one source and a <em>group of destinations</em>. The data, i.e., the packets are neither sent to one host nor multiple hosts but are instead sent to a <em>group of hosts</em>. The relationship between the source and the destination is <em>one too many</em>. The destination address consists of a special address starting with <em>224.x.x.x</em>.</li>
+</ul>
+</li>
+<li data-line="41">
+<p><strong>Subnetting</strong> is a method of dividing a single physical network into <em>logical sub-networks (subnets)</em>. Subnetting allows a business to <em>expand its network</em> without requiring a <em>new network number</em> from its Internet Service Provider. Subnetting helps to <em>reduce</em> the network traffic and also conceals network complexity. Subnetting is necessary when a <em>single network number</em> must be assigned to several portions of a <em>local area network (LAN)</em>.</p>
+<p> We use the <strong>subnet mask</strong> to separate network and host bits in an IP address. For <em>32 IP bits</em>, we use 32 subnet mask bits. Subnet mask bits and IP address bits have <em>one-to-one</em> relations. The first subnet mask bit relates with the first IP bit, the second subnet mask bit with the second IP bit, and so on till the last bit. For eg: Default subnet mask of <strong>Class A</strong>: 255.0.0.0</p>
+<p> Various uses of subnetting are:<br>
+<strong>(i)</strong> <mark>Reallocating IP Addresses</mark>: Dividing the network into <em>subnets</em> that allow admins to use one block of addresses across multiple physical networks.<br>
+<strong>(ii)</strong> <mark>Improved Network Speed</mark>: Subnets eliminate the need for traffic to pass through <em>extraneous routes</em>, resulting in faster network speeds.<br>
+<strong>(iii)</strong> <mark>Improved Network Security</mark>: It helps network admins to reduce network-wide threats by <em>quarantining</em> compromised areas of the network.<br>
+<strong>(iv)</strong> <mark>Relieving Network Congestion</mark>: Putting a group of computers where data is <em>shared</em>, on the same subnet can help reduce network traffic.<br>
+<strong>(v)</strong> <mark>Efficiency</mark>: Subnetting is used to simplify network traffic by eliminating the need for <em>additional routers</em>.</p>
+<p> <mark>Subnetting Maths</mark>: <a rel="noopener" class="external-link" href="https://www.computernetworkingnotes.com/ccna-study-guide/subnetting-tricks-subnetting-made-easy-with-examples.html" target="_blank">https://www.computernetworkingnotes.com/ccna-study-guide/subnetting-tricks-subnetting-made-easy-with-examples.html</a></p>
+</li>
+<li data-line="54">
+<p>A <strong>public IP address</strong> is an address provided that is provided by your <em>internet service provider</em> (ISP) to your network. On the internet, it recognizes your device. The internet is accessed through your router's <em>public IP address</em>. Public IP addresses are commonly used by publicly accessible enterprises such as <em>websites</em>, <em>DNS</em>, and <em>VPN</em> servers because they can be accessed from anywhere in the world. You can not <em>go online</em> without having your public IP address, which identifies your device on the internet. Your <em>router</em> is an intermediate between your computer and the internet on a typical home network. </p>
+<p> A <strong>private IP address</strong>, also known as the <em>local IP address</em>, is the IP address your network router allocates to your device. This address is <em>only visible</em> within your network, so it is <em>unavailable on the Internet</em>. Each device on the same network is assigned a unique private IP address that allows them to communicate with other devices. The device in your home can have the same private IP address as your neighbors' device or anyone else's all over the world, with private IP addresses. This is due to the <em>non-routable</em> nature of private addresses.</p>
+</li>
+<li data-line="58">
+<p>The new generation IP address, or <strong>IPv6</strong>, was created primarily to get over IPv4's <em>limits</em> and <em>exhaustion</em>. The <strong>128-bit IPv6</strong> protocol is made up of <em>eight</em> numbered strings with <em>four</em> (alphanumeric) characters each, separated by a colon. This provides us with an astounding number of unique IP addresses, <em>340,282,366,920,938,463,463,374,607,431,768,211,456</em> to be precise. Additionally, it guarantees that we won't soon run out of <em>distinctive IP</em> addresses to give to new gadgets.</p>
+<p> A <strong>network component</strong> and a <strong>node component</strong> make up an IPv6 address. The first <em>64 bits</em> of the address, known as the <em>network component</em>, are used for <em>routing</em>. The <em>node component</em>, which is the later 64 bits, is used to specify the <em>interface's address</em>. A block of <em>48 bits</em> and a block of <em>16 bits</em> can be created from the network node. <strong>Global network addresses</strong> are stored in the upper <em>48 bits</em> of the section. On an internal network, subnets are created using the lower 16-bit section, which is managed by network administrators.<br>
+<span alt="Pasted image 20240202223611.png" src="Pasted image 20240202223611.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20240202223611.png" src="pasted-image-20240202223611.png"></span><br>
+</p>
+</li>
+<li data-line="63">
+<p>The <em>point of connection</em> between a computer and a private or public network is known as a <strong>network interface</strong>. A network interface does not necessarily take the form of a <em>physical</em> network interface card (NIC). The network interface can be replaced by <em>software</em> instead. For instance, the <strong>loopback interface</strong> (<em>127.0.0.1 for IPv4 and::1 for IPv6</em>) is a piece of software that simulates a network interface rather than a physical device.</p>
+<p>  An address assigned to a <em>collection</em> of interfaces, often distributed among various routers, is known as an <strong>anycast address</strong>. When a packet is sent to an anycast address, it is sent to the <em>nearest interface</em> that also has that anycast address; the <em>routing protocol</em> decides which interface qualifies as "<em>closest</em>" in this case.</p>
+</li>
+<li data-line="67">
+<p><strong>Network Address Translation</strong>(NAT) is a process of assigning a <em>unique</em> public IP address to represent an <em>entire group</em> of computers. In Network Address Translation, a network device, typically a <strong>router</strong> or <strong>NAT firewall</strong> — assigns a public address to one or more devices connected to a private network.</p>
+<p>   The two <em>advantages</em> of NAT are now readily apparent. First, it would <em>reduce</em> the number of IP addresses we need because not every computer needs a <em>public address</em>. Second, it would <em>shield</em> these private computers from prying eyes. Only the public address is visible to everyone, everything else is <em>concealed</em> behind it. Therefore, nothing past the public address on the firewall's or router's external interface may be seen from the internet.<br>
+<span alt="nat-examples.webp" src="nat-examples.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="nat-examples.webp" src="nat-examples.webp"></span><br>
+Assume two hosts, <strong>A</strong> and <strong>B</strong> are connected in a network. Now, both request the same destination, on the same port number, say <em>1000</em>, on the host side, at the same time. If NAT <em>translates</em> IP addresses, then when their packets arrive at the NAT, both of their IP addresses will be <em>masked</em> by the network's <em>public IP address</em> and delivered to the destination. Destination will send replies to the router's public IP address. As a result, when NAT receives a response, it will be <em>unclear</em> which response belongs to which host (because source port numbers for both A and B are the same). To avoid this issue, NAT <em>conceals</em> the <em>source port number</em> and creates an <em>entry</em> in the NAT table.</p>
+</li>
+<li data-line="73">
+<p>There are generally three different types of NAT:<br>
+<strong>(i)</strong> <mark>Static NAT</mark>: In this, one <strong>unregistered</strong> (Private) IP address is mapped to one legally <strong>registered</strong> (Public) IP address or local and global addresses are mapped one to one. Usually, this is utilized for hosting websites.<br>
+<strong>(ii)</strong> <mark>Dynamic NAT</mark>: An <strong>unregistered</strong> IP address is converted into a <strong>registered</strong> (Public) IP address using a pool of public IP addresses in this sort of NAT. The packet will be dropped if the pool's IP address is not free since only a predetermined number of private IP addresses can be converted to public addresses.<br>
+<strong>(iii)</strong> <mark>Port Address Translation(PAT)</mark>: It is also known as <em>NAT overload</em>. This allows for converting numerous <strong>local</strong> (private) IP addresses to a single registered IP address. Port numbers are employed to identify the traffic or which traffic comes from which IP address.</p>
+</li>
+<li data-line="78">
+<p><strong>Quality of Service</strong> (<em>QoS</em>) is a group of technologies that operate on a network to ensure that <em>high-priority traffic</em> and applications may be reliably carried out even when the network's capacity is <em>constrained</em>. Additionally, the <em>QoS</em> specifies that supporting priority for one or more flows will not fail other flows. A <em>flow</em> can consist of a packet from a particular application or an incoming interface as well as source and destination addresses, source and destination socket numbers, session identifiers, and packets. </p>
+<p>   For instance, if <em>voice traffic</em> is tagged and a policy is developed to grant it access to the <em>bulk of network</em> bandwidth on a channel.<br>
+<strong>Stateless QoS</strong>: Routers don't keep a fine-grained state of the traffic, but one advantage of this is that it is scalable and reliable.<br>
+<strong>Stateful QoS</strong>: The server and client are highly dependent on one another in the stateful protocol.<br>
+<span alt="importance-of-qos.webp" src="importance-of-qos.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="importance-of-qos.webp" src="importance-of-qos.webp"></span></p>
+</li>
+<li data-line="84">
+<p>Techniques involved in <strong>QoS</strong>:<br>
+<strong>(i)</strong> <mark>Scheduling</mark>: Packets from one-of-a-kind flows arrive at a transfer or router for processing. An exact scheduling approach treats the one-of-a-kind flows truthfully and suitably. Several scheduling strategies are designed to enhance the exceptional of the provider. It uses <em>FIFO Queuing</em>, <em>Priority Queuing</em>, <em>Weighted Fair Queuing</em>.<br>
+<strong>(ii)</strong> <mark>Traffic Shaping</mark>: Traffic shaping is a mechanism to manipulate the quantity and the price of the visitors dispatched to the network. Two strategies can form visitors: <em>Leaky Bucket</em> and <em>Token Bucket</em>.</p>
+</li>
+<li data-line="88">
+<p>Three of the following <strong>models</strong> can be used to implement quality of service:<br>
+<strong>(i)</strong> <mark>Best Approach</mark>: If we use this model, we must treat each data packet equally in terms of priority. However, since everyone has determined the priority order in this manner, there is no assurance that all data packets will be delivered, but every attempt will be made to do so.<br>
+<strong>(i)</strong> <mark>Integrated Service or IntSrv</mark>: The bandwidth over a specified network path is reserved by this <em>QoS</em> approach. Applications request a reservation of network resources for themselves, while network devices simultaneously watch the packet flow to ensure that network resources are open to receiving packets.<br>
+<strong>(i)</strong> <mark>Differentiated Services</mark>: In this <em>QoS</em> paradigm, network components like switches and routers are set up to handle various traffic types following various priority levels. Depending on its needs, a business can classify the network traffic. For instance, giving audio traffic a higher priority.</p>
+</li>
+<li data-line="93"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>A network device uses the <strong>Internet Control Message Protocol</strong> (<em>ICMP</em>) to <em>diagnose</em> network communication problems. Information about whether data is reaching its desired destination on time is primarily determined by ICMP. Commonly, the ICMP protocol is used on network devices, such as <em>routers</em>. ICMP is essential for <em>error reporting</em> and testing and it can also be used in <em>distributed denial-of-service</em> attacks. </p>
+<p>   <strong>Ping</strong> messages refer to both the ICMP <em>echo request</em> and <em>echo reply</em> messages. A network device receives an ICMP echo request from the ping command and immediately sends back an ICMP echo reply. The ICMP <em>header</em> contains fields such as <em>Type</em>, <em>Code</em>, <em>Checksum</em>, <em>Data</em>.<br>
+<em>ICMP</em> messages are divided into two broad categories:</p>
+<ul>
+<li data-line="97">Error Messages</li>
+<li data-line="98">Query Messages</li>
+</ul>
+</li>
+<li data-line="100"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>Types of <em>ICMP</em> error message:</p>
+<ul>
+<li data-line="101"><strong>Message "Unable to reach destination":</strong> Hosts and routers send this message when IP packets cannot be routed to their destination.</li>
+<li data-line="102"><strong>Source quench message:</strong> When the network is congested or when the source is sending packets faster than the router can handle, the host or router will send this message.</li>
+<li data-line="103"><strong>Timeout message:</strong> The host/router sends this message if the datagram lifetime value is reduced to zero or if the destination address does not receive all packets at the specified time interval.</li>
+<li data-line="104"><strong>Parameter problem message:</strong> The host/router sends this message if the datagram parameters are not set correctly. Used to indicate an error in the datagram header field.</li>
+<li data-line="105"><strong>Redirect message:</strong> The host/router sends this message to update the host's routing table.</li>
+</ul>
+</li>
+<li data-line="107">
+<p><strong>ICMP Flood Internet Control Message Protocol</strong> (<em>DDoS</em>) attacks, also known as <em>ping flood</em> attacks, are common <em>denial of service</em> (DoS) attacks in which an attacker attempts to use ICMP to echo a target device. <em>Flooding</em> the destination with request packets forces the network to respond with the same number of response packets. This makes the destination <em>inaccessible</em> to normal traffic.</p>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h1 data-heading="Routing" class="heading" id="Routing">Routing</h1><div class="heading-children"><div><ol>
+<li data-line="0">
+<p><mark>Routing</mark><br>
+<strong>Routing</strong> is the process of selecting an <em>optimal path</em> across one or more networks. The <em>Routing</em> is performed on many types of networks like <em>circuit-switched</em> and <em>packet-switching</em> on the internet, where packets are forwarded from one node to another node with the help of a <em>packet forwarding system</em>. The mechanism or device used for forwarding the packets from source to destination is called a <strong>router</strong>.</p>
+<p> The routing process directs the packets on the basis of the <strong>routing table</strong>. <em>Routing tables</em> keeps the records of all the routes associated with various networks.</p>
+<p> On the other hand <strong>Routing protocols</strong> basically define a way the router can communicate with each other. It is the process of communication between two networks in order to share information <strong>regarding reachability and network status</strong>.</p>
+</li>
+<li data-line="7">
+<p>There are three different types of <em>routing</em>:<br>
+<strong>(i)</strong> <mark>Static Routing</mark>: <em>Static Routing</em> is the process of manually adding the routes in the routing table with the help of a <strong>configuration</strong> file, which is loaded when the router starts. In <strong>static routing</strong>, all the changes are done manually with the help of the system administrator.<br>
+<strong>(ii)</strong> <mark>Dynamic Routing</mark>: <em>Dynamic routing</em> protocols allow routers to <strong>dynamically</strong> learn information about other routers and add the information automatically to the router table. The Routing <strong>protocol determines</strong> the best path to the network added to the routing table.<br>
+<strong>(iii)</strong> <mark>Default Routing</mark>: In <em>default routing</em>, the packets are forwarded without the specific address of the next hop. The default route is basically the address of another router. If the address on the packet matches the route, the packet is forwarded; else, it is forwarded through a default route of that router.</p>
+</li>
+<li data-line="12"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>A <strong>routing table</strong> is a set of rules, which can also be viewed in a <em>table format</em>, and it is used to discover where data packets (i.e., traveling over an <em>Internet Protocol network</em>) will be directed. The <em>routing table</em> consists of a list of all known network addresses and information about where to forward the data packet. These entries in the routing table are called <em>route entries</em> or <em>routes</em>. The router will forward the data packet by selecting the best matching route entry. <em>Directly connected</em> networks are added automatically.</p>
+<p>  <em>Routing tables</em> consist of the following information:</p>
+<ul>
+<li data-line="15"><strong>Network ID:</strong> The network ID or destination that corresponds to the route.</li>
+<li data-line="16"><strong>Subnet Mask:</strong> The subnet mask is the mask required to match the destination IP address with the network ID address.</li>
+<li data-line="17"><strong>Next Hop:</strong> It is an IP address to which the data packet is to be forwarded and it specifies the next router which is most optimal in its routing path.</li>
+<li data-line="18"><strong>Outgoing Interface:</strong> An outgoing interface is an interface through which the data packet should go out to reach the destination network.</li>
+<li data-line="19"><strong>Metric</strong>: The general use of the metric is to specify the count of the minimum number of hops (routers crossed) to the network ID.</li>
+</ul>
+</li>
+<li data-line="21">
+<p>The three major <em>routing table protocols</em> are:<br>
+<strong>(i)</strong> <mark>Distance Vector Protocol</mark>: In such types of protocols <em>shortest path</em> is determined by <em>metric hop count</em>. Hop count depends on the number of a routers between the source and the destination. It is necessary to keep track of the <em>topology</em> and inform neighboring devices if any changes occur in topology. Eg: <strong>RIP</strong> (Routing Information Protocol).<br>
+<strong>(ii)</strong> <mark>Link-State Routing</mark>: <strong>Link-State</strong> Routing protocols build a complete topology of the entire network and then calculate the best path from the topology of all interconnected networks. The link-state routing protocol maintains three different tables that are neighbor table, the topology table, and the routing table. Eg: <strong>OSPF</strong> (Open Shortest Path First).<br>
+<strong>(iii)</strong> <mark>Path Vector Protocol</mark>: The path vector protocol is a routing protocol that keeps track of path information that is <strong>updated dynamically</strong>. The path vector protocol does not rely on the reachability to the destination, instead determines whether the path is <em>loop-free</em> or not.</p>
+</li>
+<li data-line="26">
+<p><mark>Interdomain Routing</mark> is the protocol in which the routing algorithm works both within and between domains. Domains must be connected in some way, for hosts inside one domain to exchange data with hosts in other domains. This connection within domains is governed by the interdomain routing protocols. This is often done using <strong>Path Vector Protocol</strong> using the <em>Border Gateway Protocol</em> (BGP).</p>
+<p> <mark>Intradomain Routing</mark> is the routing protocol that operates only within a domain. In other words, intradomain routing protocols are used to route packets within a specific domain, such as within an institutional network for e-mail or web browsing. Unlike interdomain routing protocols, it doesn't communicate with other domains. <strong>Distance Vector Routing</strong> (uses <em>Routing Information Protocol</em> (RIP) and <strong>Link State Routing</strong> (uses <em>Open Shortest Path First</em> (OSPF).<br>
+<span alt="interdomain-routing.webp" src="interdomain-routing.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="interdomain-routing.webp" src="interdomain-routing.webp"></span></p>
+</li>
+<li data-line="30">
+<p><strong>BGP</strong> (<em>Border Gateway Protocol</em>) is an <em>interdomain</em> routing protocol that uses <em>path-vector routing</em>. It is a standardized gateway protocol that is used to exchange routing information between <em>autonomous</em> systems on the internet. It manages how packets get routed from network to network through the exchange of routing and reachability information among edge routers. When a network router is connected to other networks, it cannot decide which network is the best to share its data.</p>
+<p> <em>BGP</em> considers all available <em>peering</em> options a router has and selects the one that is nearest to the router. Each potential peer communicates the routing information it possesses, which is then stored in a <strong>Routing Information Base</strong> (<em>RIB</em>). This information is accessible to BGP, which can then use to choose the best peering option.</p>
+</li>
+<li data-line="34">
+<p>Major <em>functions</em> performed by the <strong>BGP</strong>:<br>
+<strong>(i)</strong> <mark>Route Storage</mark>: Individual <em>BGPs</em> that use route storage store information about how to reach other networks in a set of databases.<br>
+<strong>(ii)</strong> <mark>Route Update</mark>: This task uses techniques to determine when and how to use the information obtained from peers to update the routes properly.<br>
+<strong>(iii)</strong> <mark>Route Selection</mark>: Each <em>BGP</em> selects the best routes to each network on the internet using the information in its route databases.<br>
+<strong>(iv)</strong> <mark>Route Advertisement</mark>: <em>BGP</em> only advertises the best route to peers when multiple feasible routes exist. Only viable routes are advertised, which makes the network function more efficiently.</p>
+</li>
+<li data-line="40">
+<p><strong>SDN</strong> (<em>Software Defined Networking</em>) is an architecture that divides the <em>control plane</em> from the <em>data plane</em> to give networks additional flexibility and <em>programmability</em>. Users can react fast to changes thanks to software-defined networks in cloud computing. Network performance and monitoring are enhanced thanks to SDN management, which also increases network configuration efficiency. </p>
+<p> <strong>SDN</strong> <em>decouples</em> the software from the hardware, much like any other <em>virtualized</em> technology. SDN keeps the <em>hardware-based data plane</em> for carrying out actual traffic forwarding while moving the <em>control plane</em>, which decides where to send traffic, to software. This makes it possible for network managers who work with software-defined networking to program and manage the entire network through a single interface rather than device by device.</p>
+</li>
+<li data-line="44">
+<p><em>SDN</em> broadly consists of three layers:<br>
+<strong>(i)</strong> <mark>Infrastructure Layer</mark>: The numerous networking devices that make up the infrastructure layer create the underlying network that carries out <em>network traffic forwarding</em>. This layer would be the physical one over which the control layer would establish network <em>virtualization</em>.<br>
+<strong>(ii)</strong> <mark>Control Layer</mark>: The <strong>control layer</strong> is the region of the control plane where clever logic for SDN controllers to control network infrastructure would be found. Each network vendor is focusing on developing its SDN controller and framework products in this area.<br>
+<strong>(iii)</strong> <mark>Application Layer</mark>: Utilizing all available network information regarding network topology, network state, network statistics, etc., the application layer is an open region where as many creative applications as possible can be created. Eg: Applications for <em>network setup</em> and <em>automation</em>, <em>security</em>.</p>
+</li>
+<li data-line="49">
+<p>Different models of <strong>SDN</strong> are:<br>
+<strong>(i)</strong> <mark>Switch Based SDN</mark>: It served as the foundation for the original SDN concept. The network switches' behavior is determined by a system called <em>OpenFlow</em> that the switches use to handle packets. As a result, there is a single point of control for managing how the switches handle network traffic<br>
+<strong>(ii)</strong> <mark>Hybrid SDN</mark>: In a single environment, the <strong>hybrid SDN model</strong> mixes two or more networking technologies. While traditional networking protocols regulate the other traffic flows on the network, a network manager, for example, can configure the SDN control plane to manage a set of specialized traffic flows.<br>
+<strong>(iii)</strong> <mark>SDN Overlay</mark>: To run numerous <em>virtual network</em> (VN) topologies on top of existing infrastructure, the SDN overlay model tunnels through the physical network. Depending on the type of overlay, this enables a VN to be a <em>layer 2</em> or <em>layer 3</em> network and a physical network to be a layer 2 or layer 3 network.</p>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h1 data-heading="Data Link Layer" class="heading" id="Data_Link_Layer">Data Link Layer</h1><div class="heading-children"><div><ol>
+<li data-line="0">
+<p><mark>Data Link Layer</mark><br>
+<strong>Data Link Layer</strong> is the <em>second</em> layer of the seven-layer <em>OSI</em> model that is responsible for simply ensuring and confirming that the bits and bytes received are similar to the bits and bytes being transmitted. This is the protocol layer that transports data between network nodes in a <em>wide area network</em> (WAN) or nodes in the same <em>local area network</em> (LAN).</p>
+<p> The problem with the <em>data link layer</em> is how to&nbsp;prevent&nbsp;a fast transmitter from <em>drowning</em> a slow receiver in data. A <em>traffic control method</em> is frequently required to inform the transmitter of how much buffer space the receiver currently has. <em>Flow regulation</em> and <em>error management</em> are frequently used techniques for controlling this problem.</p>
+<p> Also in the <em>data link layer</em>, broadcast networks face an additional challenge: How to&nbsp;control&nbsp;access to the shared channel. The <strong>Medium Access Control</strong> (MAC) sublayer of the data link layer is responsible for dealing with this issue.</p>
+</li>
+<li data-line="7">
+<p>Some common <em>data link layer</em> protocols are:<br>
+<strong>(i)</strong> <mark>Synchronous Data Link Protocol</mark>: SDLC is a protocol for transmitting synchronous, code-transparent, serial-by-bit data across a communications line.<br>
+<strong>(ii)</strong> <mark>High-Level Data Link Protocol</mark>: HDLC is a&nbsp;series of data link layer communication protocols for sending data between network points or nodes.<br>
+<strong>(iii)</strong> <mark>Serial Line Interface Protocol</mark>: SLIP is an Internet protocol that allows users to connect to the Internet via a computer modem.<br>
+<strong>(iv)</strong> <mark>Point to Point Protocol</mark>: PPP&nbsp;is used to connect two computer systems. Computers use PPP to communicate through a telephone network or the Internet.<br>
+<strong>(v)</strong> <mark>Link Control Protocol</mark>: LCP is a component of (PPP) that is in charge of establishing, configuring, testing, managing, and terminating transmission lines.<br>
+<strong>(vi)</strong> <mark>Link Access Procedure</mark>: LAP protocols are Data Link Layer protocols that are used to frame and transfer data via point-to-point lines.<br>
+<strong>(vii)</strong> <mark>Network Control Protocol</mark>: NCP is a&nbsp;mechanism&nbsp;for establishing and configuring various Network Layer protocols for Point-to-Point Protocol (PPP) connections.<br>
+</p>
+</li>
+<li data-line="16">
+<p>Major functions performed by the <em>data link layer</em>:<br>
+<strong>(i)</strong> <mark>Framing and Link Access</mark>: The data-link layer takes <em>packets</em> from the network layer and&nbsp;encapsulates these packets into <em>frames</em>. It defines the frame's structure and the channel access protocol that will be used to transmit the frame over the link.<br>
+<strong>(ii)</strong> <mark>Reliable Delivery</mark>: The Data Link Layer provides a <em>guaranteed</em>&nbsp;delivery service, it transmits network layer datagrams without error. <em>Transmissions</em> and <em>acknowledgments</em> are used to provide a reliable delivery service.<br>
+<strong>(iii)</strong> <mark>Flow Control</mark>: Stations on the same link may have varying <em>speeds</em> or <em>capacities</em>. The data-link layer ensures flow control, allowing two machines to transmit data simultaneously.<br>
+<strong>(iv)</strong> <mark>Error Control</mark>: Signals may experience problems during the transmission, and the bits may get&nbsp;inverted. These errors are recognized and attempted to be recovered by the data link layer&nbsp;in order to retrieve actual data bits.<br>
+<strong>(v)</strong> <mark>Physical Addressing</mark>: If the frames are to be sent to multiple systems on the network, the Data Link layer adds a header to the frame to identify the physical address of the sender or receiver.<br>
+<strong>(vi)</strong> <mark>Multi-Access</mark>: When a host on the shared link tries to send data, there is a significant chance of a collision. The data-link layer provides mechanisms such as CSMA/CD that enable different systems to access shared media.</p>
+</li>
+<li data-line="24"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><em>Bits</em> might get&nbsp;damaged while transported over a computer network due to interference and network difficulties. <em>Errors</em> occur when corrupted bits cause spurious data to be received by the destination. Errors are of three different types: <em>single bit</em>, <em>multiple bit</em> and <em>burst bit</em>(consecutive) errors. </p>
+<p>  <strong>Error control</strong> involves two main steps:</p>
+<ul>
+<li data-line="27">
+<p><mark>Error Detection</mark>: Error detection involves determining whether or not an error has occurred. The type and the number of error bits&nbsp;do not matter.</p>
+</li>
+<li data-line="28">
+<p><mark>Error Correction</mark>: Error correction involves&nbsp;determining the exact number of corrupted bits and the location of the corrupted bits.</p>
+<p>The sender must send some <em>additional&nbsp;bits</em> together with the <em>data bits</em> for error <em>detection</em> and <em>correction</em>. Based on the additional <em>redundant bits</em>, the receiver performs the necessary checks. If the data is <em>error-free</em>, it eliminates the <em>unnecessary bits</em> before delivering the message to the upper layers.</p>
+</li>
+</ul>
+</li>
+<li data-line="32">
+<p>The three main methods to <em>detect error</em> in frames:<br>
+<strong>(i)</strong> <mark>Parity Check</mark>: The <strong>parity check</strong> is performed by adding an extra bit to the data known as the <em>parity bit</em>, which results in a number of 1s that are either even in the case of <em>even parity</em> or odd in the case of <em>odd parity</em>. The parity check is only useful for detecting <em>single-bit errors</em>.<br>
+<strong>(ii)</strong> <mark>Checksum</mark>: In this the sender adds the segments using <em>1's complement</em> arithmetic. It then adds the sum to get the <strong>checksum</strong>, which is then recalculated on the receiver's end and compared to check for errors.<br>
+<strong>(iii)</strong> <mark>Cyclic Redundancy Check</mark>: <strong>CRC</strong> is a hash function that identifies accidental <em>modifications</em> to raw computer data and is widely used in storage devices such as <em>hard disc drives</em> and digital <em>telecommunications</em> networks.</p>
+</li>
+<li data-line="37"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Error correction</strong> techniques determine the exact number of corrupted bits and their positions. Two approaches are:<br>
+<strong>(i)</strong> <mark>Backward Error Correction (Retransmission)</mark>: It is a straightforward method.&nbsp;If the receiver identifies an error in the incoming frame, it requests&nbsp;the sender to retransmit the frame. However, it can be used efficiently only when retransmission is not expensive.<br>
+<strong>(ii)</strong> <mark>Forward Error Correction</mark>: If the receiver identifies an error in the incoming frame, it performs an error-correcting code that generates the actual frame. This reduces the amount of bandwidth required for retransmission. In real-time systems, it is essential.<br>
+Four major error correcting codes:</p>
+<ul>
+<li data-line="41"><em>Hamming Codes</em> </li>
+<li data-line="42"><em>Binary Convolution Codes</em></li>
+<li data-line="43"><em>Reed-Solomon Code</em></li>
+<li data-line="44"><em>Low Density Parity Check Code</em></li>
+</ul>
+</li>
+<li data-line="46">
+<p>The <em>Data Link Layer</em> has two main sublayers:<br>
+<strong>(i)</strong> <mark>Logical Link Sublayer</mark>: This part of the <em>DLL</em> is responsible for <em>flow control</em>, <em>frame acknowledgement</em> and <em>error notification</em>.<br>
+<strong>(ii)</strong> <mark>Media Access Control Sublayer</mark>: This part of the <em>DLL</em> is responsible for assigning <em>media access</em> and <em>MAC addresses</em> to devices on the network.</p>
+</li>
+<li data-line="50">
+<p><strong>Simplest protocol</strong> is used in <em>noiseless</em> channels, it has no <em>error control</em> and no <em>flow control</em>. In the simplest protocol, we assume that the receiver is always ready to handle any frames coming from the sender <em>immediately</em>. The simplest protocol is a <em>unidirectional</em> protocol in which the data frames are traveling in only one direction from the sender to the receiver. Since the simplest protocol is unidirectional, there is no <em>acknowledgment</em> (ACK). Also, as there is no data loss in the transmission, there is no need for data re-transmission. It is also known as the <strong>Elementary Data Link Protocol</strong><br>
+<span alt="flow-chart-for-simplest-protocol.webp" src="flow-chart-for-simplest-protocol.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="flow-chart-for-simplest-protocol.webp" src="flow-chart-for-simplest-protocol.webp"></span></p>
+</li>
+<li data-line="52">
+<p>The <strong>flow control</strong> mechanism is to ensure that sender does not send data more than what the receiver can handle. The DDL stores the data that needs to be sent in the <em>send buffer</em> and the data to be received in the <em>receive buffer</em>. Flow control makes sure that no more packets are sent by the sender once the receiver’s buffer is full as the messages will be <em>dropped</em> and the receiver won’t be able to handle them. In order to control the amount of data sent by the DDL, the receiver will create a buffer which is also known as <strong>Receive Window</strong>.</p>
+<p> With every <em>ACK</em> message at the receiver, it advertises the current <em>receive window</em>. It tracks the amount of space left vacant inside the buffer on the receiver side. When the window size is <em>zero</em>, the <strong>persist timer</strong> starts and DDL will stop the data transmission. <em>WindowProbe</em> message is sent in small packets of data periodically to the receiver. When it receives a <em>non-zero</em> window size, it resumes its transmission.<br>
+<span alt="stop-and-wait-protocol-example.webp" src="stop-and-wait-protocol-example.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="stop-and-wait-protocol-example.webp" src="stop-and-wait-protocol-example.webp"></span></p>
+</li>
+<li data-line="56">
+<p><strong>Pipelining</strong> is the method of sending multiple data units without waiting for an acknowledgment for the first frame sent. Pipelining ensures better utilization of network resources and also increases the speed of delivery, particularly in situations where a large number of data units make up a message to be sent.</p>
+</li>
+<li data-line="58"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>The flow control protocols are generally divided into two categories i.e.</p>
+<ul>
+<li data-line="59">
+<p><strong>Stop and wait protocol</strong></p>
+</li>
+<li data-line="60">
+<p><strong>Sliding window protocol</strong></p>
+<p>The difference between these two categories of flow control protocols is that in the stop and wait protocol, only <strong>one</strong> data frame is sent at a time from sender to receiver whereas in sliding window <strong>multiple</strong> frames are sent.</p>
+</li>
+</ul>
+</li>
+<li data-line="64">
+<p><strong>Stop &amp; Wait ARQ</strong> is used in <em>connection-oriented</em> communication that is used where reliable in-order delivery of the data frames is required.<br>
+<strong>(i)</strong> Sender A sends a data frame or packet with sequence number 0.&nbsp;         <strong>(ii)</strong> Receiver B, after receiving the data frame, sends an <em>acknowledgement</em> with sequence number 1 (the sequence number of the next expected data frame or packet).&nbsp;<br>
+<mark>There is only a one-bit sequence number that implies that both sender and receiver have a buffer(window size) for one frame or packet only.</mark><br>
+<span alt="working-principle-of-stop-and-wait-arq.webp" src="working-principle-of-stop-and-wait-arq.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="working-principle-of-stop-and-wait-arq.webp" src="working-principle-of-stop-and-wait-arq.webp"></span></p>
+</li>
+<li data-line="68">
+<p>The <strong>sliding window</strong> protocol is a <em>data link layer</em> protocol that is useful in the sequential and reliable delivery of the <em>data frames</em>. Using the sliding window protocol, the sender can send <em>multiple frames</em> at a time. The sliding window protocol uses a mechanism of <em>sequence numbers</em>. The sender associates a sequence number to the data frames so that the receiver can use this sequence number to arrange the frames in order if any frame was <em>re-transmitted</em>. The maximum size of a window is <strong>(2^m)-1</strong>, where <em>m</em> is the number of bits used in the header of the packet to express the packet's sequence number.</p>
+</li>
+<li data-line="70">
+<p><strong>Go-Back-N ARQ</strong> is a sliding window protocol which is used for flow control purposes. <em>Multiple frames</em> present in a single window are sent together from sender to receiver. The <em>Sender window</em> is a fixed-sized window that defines the number of frames that are transmitted from sender to receiver at once. The integer '<em>N</em>' in the Go Back N is the <em>frame size</em>. The <em>Receiver window</em> in the Go Back N ARQ protocol is <em>always of size 1</em>. This means that the receiver takes at most 1 frame at a single time.</p>
+<p>   When the <em>acknowledgment</em> for one frame is not received by the sender or the frames received by the receiver are out of order, then the <em>whole window</em> starting from the corrupted frame is retransmitted.<br>
+<span alt="another-working-of-go-back-n-arq-protocol.webp" src="another-working-of-go-back-n-arq-protocol.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="another-working-of-go-back-n-arq-protocol.webp" src="another-working-of-go-back-n-arq-protocol.webp"></span></p>
+</li>
+<li data-line="74">
+<p>In the <strong>Selective Repeat ARQ</strong>, we only resend the data frames that are damaged or lost. On the other hand, the correct frames are received at the receiver's end and are buffered for future usage. In the selective repeat ARQ, both the sender and the receiver have windows of the <em>same size</em>.</p>
+<p>   Now, if any frame is lost or damaged then the receiver sends a <strong>NACK</strong> to the sender. When the sender gets <strong>NACK</strong> then it retransmits the <em>lost frame only</em>. The receiver does not discard all the subsequent frames following a lost frame, it just sends back a <strong>NACK</strong> and stores the rest of the frames in its <em>memory buffer</em>. In this way, the sender does not need to wait for the timer to expire. Hence, the performance of the selective repeat ARQ increases. The <strong>ACK</strong> and the <strong>NACK</strong> have the sequence number of the frame that helps the sender identify the lost frame.<br>
+<span alt="working-of-selective-repeat-protocol.webp" src="working-of-selective-repeat-protocol.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="working-of-selective-repeat-protocol.webp" src="working-of-selective-repeat-protocol.webp"></span></p>
+</li>
+<li data-line="78">
+<p><strong>Piggybacking</strong> is a process of attaching <em>acknowledgment</em> with the data packet to be sent. It is an efficient solution for reducing the bandwidth utilization of the network. TCP is a full-duplex communication protocol, so piggybacking is used to transmit packets.<br>
+<span alt="piggybacking.png" src="piggybacking.png" class="internal-embed media-embed image-embed is-loaded"><img alt="piggybacking.png" src="piggybacking.png"></span></p>
+</li>
+<li data-line="81">
+<p>The <strong>Institute of Electrical and Electronics Engineers</strong>(<em>IEEE</em>) standards in computer networks ensure communication between various devices; it also helps to make sure that the network service, i.e., the <em>Internet</em> and its related technologies, must follow a <em>set of guidelines</em> and practices so that all the networking devices can communicate and work smoothly. </p>
+<p>  The <strong>IEEE 802</strong> is a collection of networking standards that deals with the data link layer and physical layer technologies like ethernet and wireless communications.<br>
+<strong>IEEE 802</strong>: The IEEE 802 deals with the standards of <em>LAN</em> and <em>MAN</em>.<br>
+<strong>IEEE 802.1</strong>: The IEEE 802.1 deals with the <em>MAC</em>(Media Access Control).<br>
+<strong>IEEE 802.2</strong>: The IEEE 802.2 deals with the <em>LLC</em> (Logical Link Control).</p>
+<p>  <mark>Example</mark>: IEEE <em>802.11</em> standard in computer networks is useful for devices that use wireless communication, i.e., WiFi bands. List of some other popular IEEE standards is as follows: <a rel="noopener" class="external-link" href="https://www.scaler.com/topics/computer-network/ieee-standards-in-computer-networks/" target="_blank">https://www.scaler.com/topics/computer-network/ieee-standards-in-computer-networks/</a>.</p>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h1 data-heading="Physical Layer" class="heading" id="Physical_Layer">Physical Layer</h1><div class="heading-children"><div><ol>
+<li data-line="0">
+<p><mark>Physical Layer</mark><br>
+<strong>Physical layer</strong> in the OSI model is the <strong>lowest layer</strong> of the OSI reference model. It is responsible for sending raw bits from one computer to another computer over a network. It does not deal with the data of these bits and is majorly concerned with the setup of physical connection to the network. It plays the role of interacting with actual hardware and signaling mechanisms.</p>
+<p> It's the only layer of the OSI network model that deals with physical connectivity and is responsible for establishing, maintaining, and deactivating the physical connection of two different computing devices in a network. This layer defines the <strong>hardware equipment</strong>, <strong>topologies</strong>, <strong>cabling</strong>, <strong>modes of transmission</strong>, <strong>wiring</strong>, <strong>frequencies</strong>, pulses used to represent binary signals, etc.</p>
+</li>
+<li data-line="5">
+<p>Some basic functions that are performed by the <em>physical layer</em> are:<br>
+<strong>(i)</strong> <mark>Topologies</mark>: It defines the way how different computing devices in a network must be arranged with each other. Different types of topologies include Mesh, Star, Ring, and Bus.<br>
+<strong>(ii)</strong> <mark>Configuration</mark>: It refers to the way two or more communication devices are attached to a link. A Link is the physical communication pathway that transfers data from one device to another. There are two types of configurations : <em>Point to Point Configuration</em> and <em>Multipoint Configuration</em>.<br>
+<strong>(iii)</strong> <mark>Transmission Modes</mark>: It defines the direction of transmission between two devices. Different modes of transmission are <em>Simplex</em>, <em>Half Duplex</em>, and <em>Full Duplex</em> modes.<br>
+<strong>(iv)</strong> <mark>Hardware Layer</mark>: This layer comes under the category of Hardware Layer because it deals with the setting up of a physical connection to the network.<br>
+<strong>(v)</strong> <mark>Bits Synchronization</mark>: It deals with the <em>Synchronization</em> of bits. This means that the sender and the receiver are synchronized at bit level with the help of a clock.<br>
+<strong>(vi)</strong> <mark>Bits rate control</mark>: Physical Layer maintains the flow of data rate, i.e the number of bits sent per second from the sender to a receiver.<br>
+<strong>(vii)</strong> <mark>Baseband and Broadband transmissions</mark>: The baseband transmits the digital signal using a physical medium like wires and the broadband transmits the analog signals using optical fibers and twisted cables as a medium of transmission.</p>
+</li>
+<li data-line="14">
+<p>The different <em>network topologies</em> come under the Physical Layer:<br>
+<span alt="SWC-JUL1_All-About-Network-Topology-Types-and-Diagrams_Graphic.png" src="SWC-JUL1_All-About-Network-Topology-Types-and-Diagrams_Graphic.png" class="internal-embed media-embed image-embed is-loaded"><img alt="SWC-JUL1_All-About-Network-Topology-Types-and-Diagrams_Graphic.png" src="swc-jul1_all-about-network-topology-types-and-diagrams_graphic.png"></span></p>
+</li>
+<li data-line="16">
+<p>There are three major modes of transmission:<br>
+<strong>(i)</strong> <mark>Simplex</mark>: One way communication from <em>A--&gt;B</em>, or <em>A&lt;--B</em><br>
+<strong>(ii)</strong> <mark>Half Duplex</mark>: Two way communication but both devices can't communicate simultaneously with each other.<br>
+<strong>(iii)</strong> <mark>Duplex</mark>: Two way communication in which both devices can communicate simultaneously with each other.</p>
+</li>
+<li data-line="21">
+<p><strong>Ethernet</strong> in computer networks refers to the most common type of Local Area Network (LAN) used at the moment. Due to its simplicity and the ability to support faster speeds with backward compatibility, it has grown along with technology advancements.<br>
+Types of <em>Ethernet</em> networks:<br>
+<strong>(i)</strong> <mark>Fast Ethernet</mark>: This type of Ethernet protocol is generally supported by a crooked cable or <em>CAT5 cable</em>, which has the implicit in transferring or admitting data at around <em>100 Mbps</em>.<br>
+<strong>(ii)</strong> <mark>Gigabit Ethernet</mark>: This type of network transfers data at an advanced speed of about <em>1000 Mbps</em> or <em>1 Gbps</em> using the <em>CAT5e cable</em>.<br>
+<strong>(iii)</strong> <mark>10 Gigabit Ethernet</mark>: With a data transfer rate of <em>10 Gigabits</em> per second, it is a much more advanced network and uses <em>CAT6a</em> or <em>CAT7 cable</em>.<br>
+<strong>(iv)</strong> <mark>Switch Ethernet</mark>: A <em>switch</em> or <em>hub</em> can be added to this type of network, which helps to increase its performance as each workstation in this network can have a separate <em>10Mbps</em> connection instead of sharing the medium.</p>
+</li>
+<li data-line="28">
+<p>Types of <em>Ethernet cables</em> used are as follows:<br>
+<span alt="type-of-enterprise-network-cables-3.png" src="type-of-enterprise-network-cables-3.png" class="internal-embed media-embed image-embed is-loaded"><img alt="type-of-enterprise-network-cables-3.png" src="type-of-enterprise-network-cables-3.png"></span></p>
+</li>
+<li data-line="31">
+<p><strong>Network devices</strong> are physical devices that enable communication and interaction between hardware on a computer network. Network devices are building blocks that permit communication between services and the endpoints that consume those services. In other words, they're <em>connectors</em> that allow devices on a network to communicate with one another.</p>
+<p> When a network contains a large number of devices, too many <strong>data packets</strong> are transmitted over the same network path. This can cause congestion and performance reduction. The goal of networking devices is to provide for smooth communication between various hardware linked to a network. Adding a network device facilitates the seamless sharing of network resources between different systems.</p>
+</li>
+<li data-line="35"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>The various kinds of network devices are:<br>
+<strong>(i)</strong> <mark>Hub</mark><br>
+A <strong>hub</strong> is a physical-layer device that acts on individual bits rather than frames. When a <strong>bit</strong>, representing a zero or a one, arrives from one interface, the hub simply <em>recreates</em> the bit, boosts its <em>energy strength</em>, and transmits the bit into all the other interfaces. Whenever a hub receives a bit from one of its interfaces, it sends a <em>copy</em> to all other interfaces.<br>
+There are generally 3 types of hubs:</p>
+<ul>
+<li data-line="39">
+<p><code>Active Hub</code>: These hubs have their power source and can <em>clean</em>, <em>enhance</em>, and <em>relay</em> the network's signal. It functions as both a <em>repeater</em> and a <em>wiring</em> center.</p>
+</li>
+<li data-line="40">
+<p><code>Passive Hub</code>: The passive hubs are the wire connection points that aid in the construction of the physical network. It can detect faults and malfunctioning hardware .</p>
+</li>
+<li data-line="41">
+<p><code>Intelligent Hub</code>: It functions similarly to active hubs and offers <em>remote management</em> capabilities. They also supply network devices with variable data speeds. It also allows an administrator to monitor traffic flowing through the hub and manage each port.</p>
+<p><strong>(ii)</strong> <mark>Switch</mark><br>
+A <strong>switch</strong> is a multiport network device with a buffer and design that can improve its efficiency (having a large number of ports means less traffic) and performance. When a data frame arrives at any network switch port, it evaluates the <em>destination MAC address</em>, performs the necessary checks, and sends the frame to the associated device. The switch performs error checking before forwarding the data, making it very efficient.<br>
+There are 4 types of switches:</p>
+</li>
+<li data-line="46">
+<p><code>Managed Switch</code>: These switches are used in organizations with large and complex networks because of functionalities like <strong>QoS</strong> (Quality of Service) enhancements such as higher security levels, better precision control, and complete network management.</p>
+</li>
+<li data-line="47">
+<p><code>Unmanaged Switch</code>: These <em>low-cost</em> switches are commonly found in home networks and small businesses. They can be easily set up by simply connecting to the network, and they will immediately begin operating.</p>
+</li>
+<li data-line="48">
+<p><code>LAN Switches</code>: LAN switches connect devices on an organization's internal LAN. They are also known as <em>Ethernet switches</em>. These switches are especially useful for alleviating network congestion or bottlenecks.</p>
+</li>
+<li data-line="49">
+<p><code>PoE Switches</code>: PoE Gigabit Ethernets uses <em>Power over Ethernet</em> (PoE) switches. Devices linked to it can receive <em>energy</em> and <em>data</em> over the same line thanks to <em>PoE technology</em>, which combines data and power transmission over the same connection.</p>
+<p><strong>(iii)</strong> <mark>Router</mark><br>
+A <strong>router</strong> is a <em>network layer</em> device similar to a <em>switch</em> that routes data packets based on their IP addresses. A router examines a data packet's destination IP address and uses <em>headers</em> and <em>forwarding tables</em> to determine the best way to transfer the packets.<br>
+There are various types of routers:</p>
+</li>
+<li data-line="54">
+<p><code>Wireless Router</code>: These routers can generate a wireless signal in your home or office, allowing computers to connect to routers within a specific range and access the internet</p>
+</li>
+<li data-line="55">
+<p><code>Brouter</code>: A <em>brouter</em> is a hybrid of a bridge and a router. It acts as a bridge, allowing data to be transferred between networks, and it can also route data within a network to individual systems, much like a router.</p>
+</li>
+<li data-line="56">
+<p><code>Core Router</code>: A <em>core router</em> is a kind of router that can route data within a network but cannot route data between networks.</p>
+</li>
+<li data-line="57">
+<p><code>Edge Router</code>: An <em>edge router</em> is a low-capacity device that sits at the network's edge. It enables an internal network to communicate with external networks. For internet-based connectivity with distant networks, it uses an external <strong>BGP</strong> (<em>Border Gateway Protocol</em>).</p>
+</li>
+<li data-line="58">
+<p><code>Broadband Router</code>: Broadband routers are primarily used to provide computers with high-speed internet access. It is required when connecting to the internet via phone and using <strong>Voice over IP technology</strong> (VoIP).</p>
+<p><strong>(iv)</strong> <mark>Bridge</mark><br>
+A <strong>bridge</strong> is a network device that operates at the data link layer device. A bridge is a repeater with the added functionality of filtering content by reading the <em>MAC addresses</em> of the source and destination. It is also used to connect two LANs that use the same protocol. It has a <strong>single input</strong> and <strong>output port</strong>, making it a two-port device.<br>
+There are generally two types of bridges:</p>
+</li>
+<li data-line="63">
+<p><code>Transparent Bridges</code>: These bridges operate in a manner that is transparent to all networked hosts. A transparent bridge stores MAC addresses in a table similar to a routing table and uses that information to route packets to their destination.</p>
+</li>
+<li data-line="64">
+<p><code>Source Routing Bridges</code>: The source station performs the routing operation in these bridges, and the frame specifies which route to take. The host can find the frame by sending a special frame known as the <strong>discovery frame</strong>, which propagates throughout the network using all possible paths to the destination.</p>
+<p><strong>(v)</strong> <mark>Gateway</mark><br>
+A <em>gateway</em> is a network node in telecommunications that connects two networks that use different <em>transmission protocols</em>. Gateways serve as network <em>entry</em> and <em>exit</em> points because all data must pass through or communicate with the gateway before being routed. It also consolidates <em>internet connectivity</em> into a single device. A <strong>gateway node</strong> in the enterprise can also serve as a proxy server and a firewall.<br>
+There are basically 2 different types of gateways:</p>
+</li>
+<li data-line="69">
+<p><code>Unidirectional Gateway</code>: These gateways allow alerts to go in only one direction. Changes that are made in the <strong><em>source</em></strong> <em>ObjectServer</em> are replicated in the <strong>target</strong> <em>ObjectServer</em> and not the other way around.</p>
+</li>
+<li data-line="70">
+<p><code>Bidirectional Gateway</code>: These gateways enable alerts to be sent from the <strong>source</strong> <em>ObjectServer</em> to the <strong>target</strong> <em>ObjectServer</em> or application, as well as feedback to the source.</p>
+<p>Apart from these two types, gateways can also be classified on the basis of functionality as <em>Network Gateway</em>, <em>IOT Gateway</em>, <em>Cloud Storage Gateway</em> etc.</p>
+<p><strong>(vi)</strong> <mark>Modem</mark><br>
+A <strong>modem</strong> is a network device that modulates and demodulates analog carrier signals (known as sine waves) to encode and decode digital data for processing. Because modems perform both of these tasks simultaneously, the term modem is a combination of <strong>"modulate"</strong> and <strong>"demodulate"</strong>.<br>
+There are mostly 5 different types of modems:</p>
+</li>
+<li data-line="77">
+<p><code>Optical Modem</code>: Instead of other metallic media, optical cables are used in <strong>optical modems</strong>. It converts digital data signals into light pulses transmitted via the optical fiber it employs.</p>
+</li>
+<li data-line="78">
+<p><code>Digital Modem</code>: Digital data are converted into digital signals by a <strong>digital modem</strong>. The digital data is modulated on the digital carrier signals before being transmitted over the digital transmission lines.</p>
+</li>
+<li data-line="79">
+<p><code>Acoustic Modem</code>: A specific modem called an <strong>"acoustic modem"</strong> can connect a phone handset to a gadget that traveling salespeople use to connect hotel phones. It has a microphone and speaker.</p>
+</li>
+<li data-line="80">
+<p><code>Smart Modem</code>: The smart modem has capabilities for auto-dialing, auto-redialing, and auto-answering. It has a microprocessor onboard that performs these tasks using the <strong>Hayes AT</strong> command set.</p>
+</li>
+<li data-line="81">
+<p><code>Short Haul Modem</code>: This modem is the one that is installed on your home computers. They are typically used to connect PCs in a building or office and can transmit the data over distances of up to <em>20 miles</em>.</p>
+<p><strong>(vii)</strong> <mark>Repeater</mark><br>
+A <strong>repeater</strong> is a <em>two-port device</em> that operates at the physical layer . It is used to regenerate the signal over the same network before it becomes too weak or corrupted, allowing the signal to be transmitted for a longer distance over the same network. It is important to understand that repeaters <em>do not amplify</em> the signal. When the signal weakens, repeaters copy it bit by bit and <em>regenerates</em> it at its original strength.<br>
+They are generally of two types: </p>
+</li>
+<li data-line="86">
+<p><code>Analog Repeater</code>: In an analog repeater, data is transmitted through analog signals to increase its amplitude. These repeaters are used in trunk lines to help broadcast multiple signals using **frequency division multiplexing</p>
+</li>
+<li data-line="87">
+<p><code>Digital Repeater</code>: In a digital repeater, data is transmitted in the form of binary digits such as 0s and 1s. While transmitting data, 0 and 1 values are generated, and it is capable of transmitting data over long distances.</p>
+<p>The repeaters can also classified on the basis of <em>type of connected network</em> as <code>Wireless Repeater</code> and <code>Wired Repeater</code>; on the <em>basis of domain</em> as <code>Local Repeater</code> and <code>Remote Repeater</code>.</p>
+<p><strong>(viii)</strong> <mark>Access Point</mark><br>
+A wireless device is typically meant by the term <strong>access point</strong> (AP), even though it technically refers to a wired or wireless connection. The Data Link layer of the OSI model is where an <strong>access point</strong> (AP) operates. An access point can function as a router or bridge, passing data transmissions from one access point to another. <strong>Wireless access points</strong> (WAPs) are devices that combine a transmitter and receiver (transceiver) to form a <strong>wireless LAN</strong> (WLAN). Access points are typically standalone network devices with an antenna, transmitter, and adapter built in. Access points use the wireless infrastructure network mode to connect WLANs to wired Ethernet LANs.</p>
+</li>
+</ul>
+</li>
+<li data-line="94">
+<p>A measurement of the <em>maximum capacity</em> of a wired or wireless communications link to transmit data over a network connection in a specific amount of time is known as <strong>Bandwidth</strong> in a computer network. Usually, bandwidth is expressed in the number of <em>bits</em>, <em>megabits</em>, <em>kilobits</em>, or <em>gigabits</em> that can be transmitted in one second.<br>
+<span alt="importance-of-a-bandwidth.webp" src="importance-of-a-bandwidth.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="importance-of-a-bandwidth.webp" src="importance-of-a-bandwidth.webp"></span>Bandwidth connections can be <strong>symmetrical</strong> or <strong>asymmetrical</strong>. In <em>symmetrical</em> connections, the data capacity is the <em>same</em> in both directions (upload and download). In <em>asymmetrical</em> connections, the data capacity is not the same in both directions (upload and download). The upload capacity is usually less than the download capacity in asymmetrical connections, which are common in consumer-grade internet broadband connections.</p>
+</li>
+<li data-line="97">
+<p><strong>Throughput</strong>/<strong>Bandwidth-Utilization</strong>/<strong>Effective-Bandwidth</strong><br>
+It is the effective bandwidth at which our devices can communicate. Often the devices cannot communicate using their <em>full potential</em> bandwidth speeds due to transmission and propagation delays associated with the communication. Hence, the <em>throughput</em> defines the effective bandwidth speeds that can be utilized for communication.<br>
+<code>Throughput = Efficiency x Bandwidth</code></p>
+</li>
+<li data-line="101">
+<p><strong>Capacity</strong> of a channel/medium:<br>
+The <em>capacity</em> of any medium refers to that maximum number of <em>frames/packets</em> that can exist in that medium at any particular instance.<br>
+<code>Capacity = Bandwidth * Propogation Delay(Tp)</code><br>
+<em>For full-duplex channel</em>:<code>Capacity = 2 *(Bandwidth * Propogation Delay)</code><br>
+Also, <em>efficiency</em> can be denoted in terms of capacity as:<br>
+<code>Efficiency = No. of packets in that instance / Capacity</code><br>
+So, for a simple <em>Stop&amp;Wait</em> protocol which sends only one frame at a time:<br>
+<em>Efficiency</em> = <code>1/Capacity = 1/(1+2a)</code></p>
+</li>
+<li data-line="110">
+<p>The physical address used to identify each device on a network is called a <strong>MAC</strong>(<em>Media Access Control</em>) address. Both an <em>IP address</em> and a <em>MAC address</em> are required for two networked devices to communicate with one another. Each device that may connect to the internet has one assigned to the <strong>NIC</strong>(<em>Network Interface Card</em>). It is also known as <strong>Physical address</strong>, hardware address, or <strong>BIA</strong> (<em>Burned In Address</em>).</p>
+<p>   Since it is <em>globally unique</em>, two devices cannot share the same MAC address. Each device displays it in <em>hexadecimal</em> formats, such as <code>00:0a:95:9d:67:16</code>. The 12-digit number is <em>48 bits</em> long, the first <em>24 bits</em> are utilized for the <strong>OUI</strong>(<em>Organization Unique Identifier</em>), and the remaining <em>24 bits</em> are used for <strong>NIC/vendor-specific</strong> information. It operates on the OSI model's data link layer. A logical address is connected to a physical or MAC address using the <em>ARP protocol</em>.</p>
+<p>   <code>IP addresses manage the logical routable connection from computer to computer and network to network while MAC addresses manage the actual connection between computers.</code><br>
+<span alt="architecture-of-mac 1.webp" src="architecture-of-mac 1.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="architecture-of-mac 1.webp" src="architecture-of-mac-1.webp"></span></p>
+</li>
+<li data-line="118">
+<p>There are <em>3</em> different types of MAC Address:</p>
+<p>   <strong>(i)</strong> <mark>Unicast Address</mark>: A particular network NIC is identified by its Unicast MAC address. Only the interface leading to a particular NIC receives a Unicast addressed frame. The frame is intended to only reach one receiving NIC if the LSB (least significant bit) of the first octet of an address is set to zero. The source machine's MAC address is unicast at all times.<br>
+<span alt="unicast-mac-address.webp" src="unicast-mac-address.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="unicast-mac-address.webp" src="unicast-mac-address.webp"></span><br>
+<strong>(i)</strong> <mark>Multicast Address</mark>: The source device can send a data frame to numerous other devices or NICs by using multicast addresses. The first three bytes of the first octet of an address, or the <strong>LSB</strong> (least significant bit), in a <strong>Layer-2</strong> (Ethernet) Multicast address, are set to one and reserved for multicast addresses.<br>
+<span alt="multicast-mac-address.webp" src="multicast-mac-address.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="multicast-mac-address.webp" src="multicast-mac-address.webp"></span><br>
+<strong>(i)</strong> <mark>Broadcast Address</mark>: It is a representation of all networked devices. Ethernet frames containing one value in each of the destination address's bits (<code>FF-FF-FF-FF-FF</code>), also referred to as <em>broadcast addresses</em>, are known as <em>broadcast frames</em>. The reserved addresses for the broadcast are all contained in these bits. All of the computers that are a part of that LAN segment will receive frames that are destined with the MAC address         <code>FF-FF-FF-FF-FF-FF</code>.<br>
+<span alt="broadcast-mac-address.webp" src="broadcast-mac-address.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="broadcast-mac-address.webp" src="broadcast-mac-address.webp"></span></p>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h1 data-heading="Network Security" class="heading" id="Network_Security">Network Security</h1><div class="heading-children"><div><ol>
+<li data-line="0">
+<p><strong>Cryptography</strong> is a term used in data communication that refers to protecting the private information shared between two parties. Network Security refers to securing and protecting the network and data to ensure the confidentiality of data. </p>
+<p> The message of the sender also known as <strong>plain text</strong> is converted into an unreadable form by using a key ‘<em>k</em>’, that unreadable resultant text is called <strong>cipher text</strong>. And this whole process is known as <strong>encryption</strong>. <strong>Decryption</strong> is the reverse process of encryption. In decryption, at the receiver end cipher text is converted into plain text using the key, so the receiver can understand it.<br>
+<span alt="cryptography.webp" src="cryptography.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="cryptography.webp" src="cryptography.webp"></span></p>
+</li>
+<li data-line="4"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>The main principles of cryptography:</p>
+<ul>
+<li data-line="5"><strong>Confidentiality</strong> refers to rules and regulations that make sure that the data is restricted to certain people or certain places.</li>
+<li data-line="6"><strong>Data integrity</strong> ensures that data remains accurate and consistent over its whole transmission process.</li>
+<li data-line="7"><strong>Authentication</strong> ensures that the data is being claimed by the person who is related to it.</li>
+<li data-line="8"><strong>Non-repudiation</strong> ensures that a person or a party related to the transmission process cannot deny the authenticity of their signature on the data or the transmission of a message.</li>
+</ul>
+</li>
+<li data-line="10">
+<p><strong>Network Security</strong> generally refers to action taken by an enterprise or organization to protect and secure its computer network and data. The main aim is to ensure the <em>confidentiality</em> and <em>accessibility</em> of the network and data.<br>
+<span alt="network-security-model 1.webp" src="network-security-model 1.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="network-security-model 1.webp" src="network-security-model-1.webp"></span></p>
+</li>
+<li data-line="12">
+<p><strong>Digital signatures</strong> allow us to verify the <em>author</em>, <em>date</em>, and <em>time</em> of signatures and authenticate the message contents. To verify the integrity and validity of digital messages and documents, it employs a <strong>cutting-edge mathematical technique</strong>. It helps us combat the issue of impersonation and tampering in digital communications and ensures that the contents of a message are not changed while in transit. Additionally, digital signatures offer details about the message's origin, status, and signer's agreement.</p>
+<p>  A <strong>message digest</strong> is a one-way hash function used in cryptography that contains a string of numbers. By detecting modifications and adjustments to any component of a message, <em>message digests</em> are intended to safeguard the integrity of a piece of data or media. The <em>digital signature</em> is created when the sender uses their private key to encrypt the message digest after computing it (using an algorithm like <strong>RSA or SHA1</strong>).</p>
+</li>
+<li data-line="16"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>A <strong>firewall</strong> is a <em>hardware</em> or <em>software-based</em> network security device that monitors all <em>incoming</em> and <em>outgoing</em> traffic and accepts, rejects or drops that traffic based on a defined set of security rules. A firewall creates a barrier between <em>secure</em> internal networks and <em>untrusted</em> networks like the Internet. They are designed to protect against <em>malware</em> and application-layer attacks. When you use a firewall as part of your security infrastructure, you configure your network with <em>specific policies</em> that allow or block incoming and outgoing traffic.</p>
+<p>  Important <em>features</em> of a firewall are:</p>
+<ul>
+<li data-line="19">Prevent unauthorized disclosure of sensitive information</li>
+<li data-line="20">Prevent Modification of Other Party Data</li>
+<li data-line="21">Record User Activity</li>
+<li data-line="22">Act as a Network Security Post<br>
+<span alt="working-of-firewall 1.webp" src="working-of-firewall 1.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="working-of-firewall 1.webp" src="working-of-firewall-1.webp"></span></li>
+</ul>
+</li>
+<li data-line="25">
+<p><em>Firewalls</em> are classified into <em>three</em> types based on their structure : <strong>Software firewalls</strong>, <strong>Hardware firewalls</strong>, or <mark>both</mark>.<br>
+<mark>Hardware Firewall</mark>: It is a physical network security device that connects a computer network to a <em>gateway</em>. As an example, consider a broadband router. A hardware firewall is also known as an <em>Appliance Firewall</em>.<br>
+<mark>Software Firewall</mark>: It is a simple program that is installed on a computer and works by using port numbers and other software that is already installed. A Host Firewall is another name for this type of firewall.</p>
+<p> There are many other types of firewalls based on their <em>features</em> and <em>level of security</em>:<br>
+<strong>(i)</strong> <mark>Packet-Filtering Firewall</mark>: It is the most basic firewall that functions as a management program, monitoring network traffic and filtering incoming packets based on security rules that have been configured.<br>
+<strong>(ii)</strong> <mark>Circuit-Level Gateways</mark>: These firewalls examine information about transmission, just like packet-filtering firewalls, but they do not look for real data and hence they work without using a lot of processing resources<br>
+<strong>(iii)</strong> <mark>Application-Level Gateways</mark>: These firewalls work at the application layer and can prohibit particular types of information and identify when applications and protocols (such as HTTP and FTP) are being abused.<br>
+<strong>(iv)</strong> <mark>Stateful Multi-layer Inspection Firewalls</mark>:They are preferable to packet-filtering firewalls or circuit-level gateways because they provide both packet inspection technology and TCP handshake verification. These firewalls also monitor the status of connections that have already been made.<br>
+<strong>(v)</strong> <mark>Next-Generation Firewalls</mark>: NGFW monitors the complete data transaction, including packet headers, packet contents, and sources, in contrast to traditional firewalls and are created in a way that enables them to counteract more complex and developing security risks.<br>
+<strong>(vi)</strong> <mark>Threat-Focused NGFW</mark>: Along with all the characteristics of Next-Generational Firewalls, they additionally offer enhanced threat detection and remediation. These firewalls can respond to threats quickly.<br>
+<strong>(vii)</strong> <mark>NAT Firewalls</mark>: These firewalls are primarily intended to access Internet traffic while blocking all unauthorized connections. These firewalls usually hide our devices' IP addresses, making them safe from attackers.<br>
+<strong>(viii)</strong> <mark>Cloud Firewalls</mark>: A firewall is built using a cloud solution, it is referred to as a cloud firewall or FaaS. (firewall-as-service). Third-party vendors typically maintain and operate cloud firewalls on the Internet. This type of firewall is comparable to a proxy firewall.<br>
+<strong>(ix)</strong> <mark>Unified Threat Management Firewalls</mark>: The UTM firewalls are a unique class of devices that combine stateful inspection firewall functionality with intrusion detection and prevention capabilities.</p>
+</li>
+<li data-line="40">
+<p><strong>SSL</strong> (<em>Secure Sockets Layer</em>) is a <em>cryptographic</em> protocol that enables data transmission security over a <strong>TCP</strong> (<em>Transmission Control Protocol</em>) connection. <em>SSL</em> encrypts your data to ensure that any information transmitted between the two parties remains <em>confidential</em> and safe from potential attackers. This is critical for protecting sensitive information online. <strong>TLS</strong> (<em>Transport Layer Security</em>) is the successor to SSL and offers stronger encryption and security features.<br>
+<span alt="phases-of-ssl-connection.webp" src="phases-of-ssl-connection.webp" class="internal-embed media-embed image-embed is-loaded"><img alt="phases-of-ssl-connection.webp" src="phases-of-ssl-connection.webp"></span></p>
+</li>
+<li data-line="42"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p>There are various steps involved in <em>establishing</em> an <strong>SSL</strong> connection:</p>
+<p>  <strong>Phase 1: The handshake:</strong> </p>
+<ul>
+<li data-line="45">
+<p>The client initiates a <em>TCP</em> connection by sending a <em>SYN</em> packet.</p>
+</li>
+<li data-line="46">
+<p>The server responds with a <em>SYN/ACK</em> packet to acknowledge the client's request.</p>
+</li>
+<li data-line="47">
+<p>The client sends an <em>ACK</em> packet to confirm the connection.</p>
+<p><strong>Phase 2: Exchanging keys:</strong></p>
+</li>
+<li data-line="50">
+<p>The client sends a <em>hello</em> message to the server, initiating the SSL handshake</p>
+</li>
+<li data-line="51">
+<p>The server responds by sending its <em>signed certificate</em>, which includes the <em>public key</em> but not the <em>private key</em>.</p>
+</li>
+<li data-line="52">
+<p>The client verifies the server's SSL certificate with the <em>certificate authority</em> that issued it.</p>
+</li>
+<li data-line="53">
+<p>If the certificate is <em>valid</em>, the client creates a <em>session key</em>, encrypts it with the server's public key and sends it to the server.</p>
+</li>
+<li data-line="54">
+<p>The server decrypts the data using its own private key, obtaining the <em>session key</em>.</p>
+</li>
+<li data-line="55">
+<p>The server then uses this <em>session key</em> to <em>encrypt</em> the data before sending it over to the client and also to <em>decrypt</em> the data received from the client.</p>
+<p><strong>Phase 3: Data Transfer:</strong><br>
+After establishing a TCP connection and enabling encryption and decryption, the final step of the second phase are repeated to securely transfer segmented data over TCP segments over the created TCP connection.</p>
+</li>
+</ul>
+</li>
+</ol></div><div class="mod-footer"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#OSI / TCP/IP"><div class="tree-item-contents heading-link" heading-name="OSI / TCP/IP"><span class="tree-item-title">OSI / TCP/IP</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#Application_Layer"><div class="tree-item-contents heading-link" heading-name="Application Layer"><span class="tree-item-title">Application Layer</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#Transport_Layer"><div class="tree-item-contents heading-link" heading-name="Transport Layer"><span class="tree-item-title">Transport Layer</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#Network_Layer"><div class="tree-item-contents heading-link" heading-name="Network Layer"><span class="tree-item-title">Network Layer</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#Routing"><div class="tree-item-contents heading-link" heading-name="Routing"><span class="tree-item-title">Routing</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#Data_Link_Layer"><div class="tree-item-contents heading-link" heading-name="Data Link Layer"><span class="tree-item-title">Data Link Layer</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#Physical_Layer"><div class="tree-item-contents heading-link" heading-name="Physical Layer"><span class="tree-item-title">Physical Layer</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="index.html#Network_Security"><div class="tree-item-contents heading-link" heading-name="Network Security"><span class="tree-item-title">Network Security</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>

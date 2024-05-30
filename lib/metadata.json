@@ -1,0 +1,618 @@
+{
+  "vaultName": "v0id's Arsenal",
+  "lastExport": 1717099498978,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-light show-inline-title show-ribbon show-urls show-close-buttons show-file-explorer-navigation no-lp-heading-level-indicator",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "another-working-of-go-back-n-arq-protocol.webp",
+    "architecture-of-mac.webp",
+    "architecture-of-mac 1.webp",
+    "broadcast-mac-address.webp",
+    "congestion-avoidance-phase.webp",
+    "cryptography.webp",
+    "example-of-the-working-of-smtp-protocol.webp",
+    "flow-chart-for-simplest-protocol.webp",
+    "flow-control-protocols.webp",
+    "format-of-user-datagram.webp",
+    "http-request.webp",
+    "image-for-the-protocol.webp",
+    "importance-of-a-bandwidth.webp",
+    "importance-of-qos.webp",
+    "index.md",
+    "interdomain-routing.webp",
+    "iterative-dns-service.webp",
+    "mqtt-protocal-overview.webp",
+    "mqtt-protocal-structure.webp",
+    "multicast-mac-address.webp",
+    "nat-examples.webp",
+    "network-address-translation.webp",
+    "network-security-model.webp",
+    "network-security-model 1.webp",
+    "parts-of-ipv4-address.webp",
+    "Pasted image 20240122125811.png",
+    "Pasted image 20240202214244.png",
+    "Pasted image 20240202223433.png",
+    "Pasted image 20240202223516.png",
+    "Pasted image 20240202223611.png",
+    "phases-of-ssl-connection.webp",
+    "piggybacking.png",
+    "recursive-dns-service.webp",
+    "slow-start-phase-congestion-control.webp",
+    "Stop-and-Wait-ARQ-7.png",
+    "stop-and-wait-protocol-example.webp",
+    "SWC-JUL1_All-About-Network-Topology-Types-and-Diagrams_Graphic.png",
+    "tcp-segment-format.webp",
+    "tcp-segment-format 1.webp",
+    "type-of-enterprise-network-cables-3.png",
+    "unicast-mac-address.webp",
+    "various-layers-of-the-osi-model 1.webp",
+    "what-is-a-client.webp",
+    "what-is-a-client-server-network.webp",
+    "what-is-http-protocol.webp",
+    "what-is-http-protocol 1.webp",
+    "working-of-firewall.webp",
+    "working-of-firewall 1.webp",
+    "working-of-selective-repeat-protocol.webp",
+    "working-of-tcp.webp",
+    "working-principle-of-stop-and-wait-arq.webp",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/scripts/webpage.js",
+    "lib/media/favicon.png",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css"
+  ],
+  "mainDependencies": [
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/scripts/webpage.js",
+    "lib/media/favicon.png",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css"
+  ],
+  "fileInfo": {
+    "another-working-of-go-back-n-arq-protocol.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 82230,
+      "exportedPath": "another-working-of-go-back-n-arq-protocol.webp",
+      "dependencies": []
+    },
+    "architecture-of-mac.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 88294,
+      "exportedPath": "architecture-of-mac.webp",
+      "dependencies": []
+    },
+    "architecture-of-mac 1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 88294,
+      "exportedPath": "architecture-of-mac-1.webp",
+      "dependencies": []
+    },
+    "broadcast-mac-address.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 104456,
+      "exportedPath": "broadcast-mac-address.webp",
+      "dependencies": []
+    },
+    "congestion-avoidance-phase.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 54256,
+      "exportedPath": "congestion-avoidance-phase.webp",
+      "dependencies": []
+    },
+    "cryptography.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 48422,
+      "exportedPath": "cryptography.webp",
+      "dependencies": []
+    },
+    "example-of-the-working-of-smtp-protocol.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 38466,
+      "exportedPath": "example-of-the-working-of-smtp-protocol.webp",
+      "dependencies": []
+    },
+    "flow-chart-for-simplest-protocol.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 40386,
+      "exportedPath": "flow-chart-for-simplest-protocol.webp",
+      "dependencies": []
+    },
+    "flow-control-protocols.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 55174,
+      "exportedPath": "flow-control-protocols.webp",
+      "dependencies": []
+    },
+    "format-of-user-datagram.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 47488,
+      "exportedPath": "format-of-user-datagram.webp",
+      "dependencies": []
+    },
+    "http-request.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 60464,
+      "exportedPath": "http-request.webp",
+      "dependencies": []
+    },
+    "image-for-the-protocol.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 93986,
+      "exportedPath": "image-for-the-protocol.webp",
+      "dependencies": []
+    },
+    "importance-of-a-bandwidth.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 80196,
+      "exportedPath": "importance-of-a-bandwidth.webp",
+      "dependencies": []
+    },
+    "importance-of-qos.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 128942,
+      "exportedPath": "importance-of-qos.webp",
+      "dependencies": []
+    },
+    "index.md": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 103576,
+      "exportedPath": "index.html",
+      "dependencies": [
+        "various-layers-of-the-osi-model-1.webp",
+        "image-for-the-protocol.webp",
+        "what-is-a-client.webp",
+        "what-is-a-client-server-network.webp",
+        "recursive-dns-service.webp",
+        "iterative-dns-service.webp",
+        "http-request.webp",
+        "what-is-http-protocol-1.webp",
+        "example-of-the-working-of-smtp-protocol.webp",
+        "mqtt-protocal-overview.webp",
+        "mqtt-protocal-structure.webp",
+        "format-of-user-datagram.webp",
+        "tcp-segment-format-1.webp",
+        "working-of-tcp.webp",
+        "slow-start-phase-congestion-control.webp",
+        "congestion-avoidance-phase.webp",
+        "parts-of-ipv4-address.webp",
+        "pasted-image-20240202223611.png",
+        "nat-examples.webp",
+        "importance-of-qos.webp",
+        "interdomain-routing.webp",
+        "flow-chart-for-simplest-protocol.webp",
+        "stop-and-wait-protocol-example.webp",
+        "working-principle-of-stop-and-wait-arq.webp",
+        "another-working-of-go-back-n-arq-protocol.webp",
+        "working-of-selective-repeat-protocol.webp",
+        "piggybacking.png",
+        "swc-jul1_all-about-network-topology-types-and-diagrams_graphic.png",
+        "type-of-enterprise-network-cables-3.png",
+        "importance-of-a-bandwidth.webp",
+        "architecture-of-mac-1.webp",
+        "unicast-mac-address.webp",
+        "multicast-mac-address.webp",
+        "broadcast-mac-address.webp",
+        "cryptography.webp",
+        "network-security-model-1.webp",
+        "working-of-firewall-1.webp",
+        "phases-of-ssl-connection.webp"
+      ]
+    },
+    "interdomain-routing.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 51674,
+      "exportedPath": "interdomain-routing.webp",
+      "dependencies": []
+    },
+    "iterative-dns-service.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 54720,
+      "exportedPath": "iterative-dns-service.webp",
+      "dependencies": []
+    },
+    "mqtt-protocal-overview.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 36704,
+      "exportedPath": "mqtt-protocal-overview.webp",
+      "dependencies": []
+    },
+    "mqtt-protocal-structure.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 68884,
+      "exportedPath": "mqtt-protocal-structure.webp",
+      "dependencies": []
+    },
+    "multicast-mac-address.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 102190,
+      "exportedPath": "multicast-mac-address.webp",
+      "dependencies": []
+    },
+    "nat-examples.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 63610,
+      "exportedPath": "nat-examples.webp",
+      "dependencies": []
+    },
+    "network-address-translation.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 69376,
+      "exportedPath": "network-address-translation.webp",
+      "dependencies": []
+    },
+    "network-security-model.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 90664,
+      "exportedPath": "network-security-model.webp",
+      "dependencies": []
+    },
+    "network-security-model 1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 90664,
+      "exportedPath": "network-security-model-1.webp",
+      "dependencies": []
+    },
+    "parts-of-ipv4-address.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 57588,
+      "exportedPath": "parts-of-ipv4-address.webp",
+      "dependencies": []
+    },
+    "Pasted image 20240122125811.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 1380704,
+      "exportedPath": "pasted-image-20240122125811.png",
+      "dependencies": []
+    },
+    "Pasted image 20240202214244.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 321120,
+      "exportedPath": "pasted-image-20240202214244.png",
+      "dependencies": []
+    },
+    "Pasted image 20240202223433.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 354427,
+      "exportedPath": "pasted-image-20240202223433.png",
+      "dependencies": []
+    },
+    "Pasted image 20240202223516.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 354427,
+      "exportedPath": "pasted-image-20240202223516.png",
+      "dependencies": []
+    },
+    "Pasted image 20240202223611.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 354427,
+      "exportedPath": "pasted-image-20240202223611.png",
+      "dependencies": []
+    },
+    "phases-of-ssl-connection.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 47652,
+      "exportedPath": "phases-of-ssl-connection.webp",
+      "dependencies": []
+    },
+    "piggybacking.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 25630,
+      "exportedPath": "piggybacking.png",
+      "dependencies": []
+    },
+    "recursive-dns-service.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 54434,
+      "exportedPath": "recursive-dns-service.webp",
+      "dependencies": []
+    },
+    "slow-start-phase-congestion-control.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 119332,
+      "exportedPath": "slow-start-phase-congestion-control.webp",
+      "dependencies": []
+    },
+    "Stop-and-Wait-ARQ-7.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 54301,
+      "exportedPath": "stop-and-wait-arq-7.png",
+      "dependencies": []
+    },
+    "stop-and-wait-protocol-example.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 50100,
+      "exportedPath": "stop-and-wait-protocol-example.webp",
+      "dependencies": []
+    },
+    "SWC-JUL1_All-About-Network-Topology-Types-and-Diagrams_Graphic.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 1198698,
+      "exportedPath": "swc-jul1_all-about-network-topology-types-and-diagrams_graphic.png",
+      "dependencies": []
+    },
+    "tcp-segment-format.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 90778,
+      "exportedPath": "tcp-segment-format.webp",
+      "dependencies": []
+    },
+    "tcp-segment-format 1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 90778,
+      "exportedPath": "tcp-segment-format-1.webp",
+      "dependencies": []
+    },
+    "type-of-enterprise-network-cables-3.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 69720,
+      "exportedPath": "type-of-enterprise-network-cables-3.png",
+      "dependencies": []
+    },
+    "unicast-mac-address.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 103586,
+      "exportedPath": "unicast-mac-address.webp",
+      "dependencies": []
+    },
+    "various-layers-of-the-osi-model 1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 127582,
+      "exportedPath": "various-layers-of-the-osi-model-1.webp",
+      "dependencies": []
+    },
+    "what-is-a-client.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 56404,
+      "exportedPath": "what-is-a-client.webp",
+      "dependencies": []
+    },
+    "what-is-a-client-server-network.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 37866,
+      "exportedPath": "what-is-a-client-server-network.webp",
+      "dependencies": []
+    },
+    "what-is-http-protocol.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 62202,
+      "exportedPath": "what-is-http-protocol.webp",
+      "dependencies": []
+    },
+    "what-is-http-protocol 1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 62202,
+      "exportedPath": "what-is-http-protocol-1.webp",
+      "dependencies": []
+    },
+    "working-of-firewall.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 77798,
+      "exportedPath": "working-of-firewall.webp",
+      "dependencies": []
+    },
+    "working-of-firewall 1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 77798,
+      "exportedPath": "working-of-firewall-1.webp",
+      "dependencies": []
+    },
+    "working-of-selective-repeat-protocol.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 80360,
+      "exportedPath": "working-of-selective-repeat-protocol.webp",
+      "dependencies": []
+    },
+    "working-of-tcp.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 43516,
+      "exportedPath": "working-of-tcp.webp",
+      "dependencies": []
+    },
+    "working-principle-of-stop-and-wait-arq.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 52188,
+      "exportedPath": "working-principle-of-stop-and-wait-arq.webp",
+      "dependencies": []
+    },
+    "various-layers-of-the-osi-model-1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 127582,
+      "exportedPath": "various-layers-of-the-osi-model-1.webp",
+      "dependencies": []
+    },
+    "what-is-http-protocol-1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 62202,
+      "exportedPath": "what-is-http-protocol-1.webp",
+      "dependencies": []
+    },
+    "tcp-segment-format-1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 90778,
+      "exportedPath": "tcp-segment-format-1.webp",
+      "dependencies": []
+    },
+    "pasted-image-20240202223611.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 354427,
+      "exportedPath": "pasted-image-20240202223611.png",
+      "dependencies": []
+    },
+    "swc-jul1_all-about-network-topology-types-and-diagrams_graphic.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 1198698,
+      "exportedPath": "swc-jul1_all-about-network-topology-types-and-diagrams_graphic.png",
+      "dependencies": []
+    },
+    "architecture-of-mac-1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 88294,
+      "exportedPath": "architecture-of-mac-1.webp",
+      "dependencies": []
+    },
+    "network-security-model-1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 90664,
+      "exportedPath": "network-security-model-1.webp",
+      "dependencies": []
+    },
+    "working-of-firewall-1.webp": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 77798,
+      "exportedPath": "working-of-firewall-1.webp",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 153366,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/theme.css": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 944226,
+      "exportedPath": "lib/styles/theme.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 236,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1717099498978,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    }
+  }
+}
